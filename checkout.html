@@ -35,35 +35,38 @@
   <!-- Static Fallback Single Luxury Navbar -->
   <header class="navbar navbar-expand-lg navbar-luxe sticky-nav">
     <div class="container d-flex align-items-center justify-content-between">
-      <button class="navbar-toggler border-0 p-0 text-body order-1 d-lg-none" type="button"
-        data-bs-toggle="collapse" data-bs-target="#navbarVelureMenu" aria-controls="navbarVelureMenu"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <i class="bi bi-list fs-2"></i>
-      </button>
-
-      <a class="navbar-brand order-2 order-lg-1 mx-auto mx-lg-0" href="index.html" aria-label="Maison Vélure Paris Home">
+      <a class="navbar-brand order-1 order-lg-1 mx-auto mx-lg-0" href="index.html"
+        aria-label="Maison Vélure Paris Home">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="160" height="40" fill="none">
           <g transform="translate(10, 8)">
-            <circle cx="22" cy="22" r="21" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.6" />
+            <circle cx="22" cy="22" r="21" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2"
+              opacity="0.6" />
             <circle cx="22" cy="22" r="18" stroke="currentColor" stroke-width="1.2" />
-            <path d="M14 15 L22 30 L30 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M18 15 L22 24 L26 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M14 15 L22 30 L30 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M18 15 L22 24 L26 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
             <circle cx="22" cy="12" r="1.5" fill="currentColor" />
           </g>
-          <text x="64" y="32" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="600" letter-spacing="4" fill="currentColor">VÉLURE</text>
-          <text x="66" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600" letter-spacing="4.5" fill="currentColor" opacity="0.75">PARIS · ATELIER 1984</text>
+          <text x="64" y="32" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="600"
+            letter-spacing="4" fill="currentColor">VÉLURE</text>
+          <text x="66" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600"
+            letter-spacing="4.5" fill="currentColor" opacity="0.75">PARIS · ATELIER 1984</text>
         </svg>
       </a>
 
-      <nav class="collapse navbar-collapse justify-content-center order-4 order-lg-2 w-100 w-lg-auto" id="navbarVelureMenu">
+      <nav class="collapse navbar-collapse justify-content-center order-4 order-lg-2 w-100 w-lg-auto"
+        id="navbarVelureMenu">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              data-bs-display="static" aria-expanded="false">
               Home <i class="bi bi-chevron-down ms-1" style="font-size: 0.65rem;"></i>
             </a>
             <ul class="dropdown-menu dropdown-menu-luxe">
               <li><a class="dropdown-item dropdown-item-luxe" href="index.html">Home 1 — General Store</a></li>
-              <li><a class="dropdown-item dropdown-item-luxe" href="index-2.html">Home 2 — Fashion &amp; Collection</a></li>
+              <li><a class="dropdown-item dropdown-item-luxe" href="index-2.html">Home 2 — Fashion &amp; Collection</a>
+              </li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
@@ -75,22 +78,31 @@
         </ul>
       </nav>
 
-      <div class="d-flex align-items-center gap-2 order-3">
-        <button class="btn-icon theme-toggle-btn" type="button" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+      <div class="d-flex align-items-center gap-2 order-2 order-lg-3">
+        <button class="btn-icon theme-toggle-btn" type="button" title="Toggle Light/Dark Theme"
+          aria-label="Toggle Theme">
           <i class="bi bi-moon-stars"></i>
         </button>
-        <button class="btn-icon rtl-toggle-btn" type="button" title="Toggle RTL Direction" aria-label="Toggle RTL" style="font-size: 0.72rem; font-weight: 700;">
+        <button class="btn-icon rtl-toggle-btn" type="button" title="Toggle RTL Direction" aria-label="Toggle RTL"
+          style="font-size: 0.72rem; font-weight: 700;">
           RTL
         </button>
         <a href="shop.html" class="btn-icon" title="Wishlist — View Shop" aria-label="View Shop">
           <i class="bi bi-heart"></i>
           <span class="badge-count wishlist-badge-count" style="display:none;">0</span>
         </a>
-        <button class="btn-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" title="Shopping Bag" aria-label="View Shopping Bag">
+        <button class="btn-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas"
+          title="Shopping Bag" aria-label="View Shopping Bag">
           <i class="bi bi-bag"></i>
           <span class="badge-count cart-badge-count">1</span>
         </button>
       </div>
+
+      <button class="navbar-toggler border-0 p-0 text-body order-3 d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarVelureMenu" aria-controls="navbarVelureMenu" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2"></i>
+      </button>
     </div>
   </header>
 
@@ -137,13 +149,16 @@
                 <!-- Contact Info Fields -->
                 <div class="row g-3 mb-3">
                   <div class="col-md-6">
-                    <label class="form-label-luxe" for="checkoutEmail">Email Address <span class="text-danger">*</span></label>
+                    <label class="form-label-luxe" for="checkoutEmail">Email Address <span
+                        class="text-danger">*</span></label>
                     <input type="email" class="form-control form-control-luxe" id="checkoutEmail" required
                       placeholder="e.g. clara.dupont@atelier.fr" value="clara.dupont@paris.com">
-                    <div class="form-text small text-muted">Order confirmation and courier tracking will be sent here.</div>
+                    <div class="form-text small text-muted">Order confirmation and courier tracking will be sent here.
+                    </div>
                   </div>
                   <div class="col-md-6">
-                    <label class="form-label-luxe" for="checkoutPhone">Phone Number <span class="text-danger">*</span></label>
+                    <label class="form-label-luxe" for="checkoutPhone">Phone Number <span
+                        class="text-danger">*</span></label>
                     <input type="tel" class="form-control form-control-luxe" id="checkoutPhone" required
                       placeholder="e.g. +33 6 12 34 56 78" value="+33 6 42 68 55 00">
                     <div class="form-text small text-muted">For delivery courier SMS updates.</div>
@@ -155,18 +170,21 @@
                 <!-- Delivery Address Fields -->
                 <div class="row g-3">
                   <div class="col-md-6">
-                    <label class="form-label-luxe" for="checkoutFirstName">First Name <span class="text-danger">*</span></label>
+                    <label class="form-label-luxe" for="checkoutFirstName">First Name <span
+                        class="text-danger">*</span></label>
                     <input type="text" class="form-control form-control-luxe" id="checkoutFirstName" required
                       placeholder="First Name" value="Clara">
                   </div>
                   <div class="col-md-6">
-                    <label class="form-label-luxe" for="checkoutLastName">Last Name <span class="text-danger">*</span></label>
+                    <label class="form-label-luxe" for="checkoutLastName">Last Name <span
+                        class="text-danger">*</span></label>
                     <input type="text" class="form-control form-control-luxe" id="checkoutLastName" required
                       placeholder="Last Name" value="Dupont">
                   </div>
 
                   <div class="col-12">
-                    <label class="form-label-luxe" for="checkoutCountry">Country / Region <span class="text-danger">*</span></label>
+                    <label class="form-label-luxe" for="checkoutCountry">Country / Region <span
+                        class="text-danger">*</span></label>
                     <select class="form-select form-select-luxe border-theme bg-surface" id="checkoutCountry" required>
                       <option value="France" selected>France</option>
                       <option value="United States">United States</option>
@@ -182,7 +200,8 @@
                   </div>
 
                   <div class="col-12">
-                    <label class="form-label-luxe" for="checkoutAddress">Street Address <span class="text-danger">*</span></label>
+                    <label class="form-label-luxe" for="checkoutAddress">Street Address <span
+                        class="text-danger">*</span></label>
                     <input type="text" class="form-control form-control-luxe" id="checkoutAddress" required
                       placeholder="House number and street name" value="24 Avenue Montaigne">
                   </div>
@@ -199,12 +218,14 @@
                       placeholder="City" value="Paris">
                   </div>
                   <div class="col-md-4">
-                    <label class="form-label-luxe" for="checkoutState">State / Region <span class="text-danger">*</span></label>
+                    <label class="form-label-luxe" for="checkoutState">State / Region <span
+                        class="text-danger">*</span></label>
                     <input type="text" class="form-control form-control-luxe" id="checkoutState" required
                       placeholder="State or Region" value="Île-de-France">
                   </div>
                   <div class="col-md-3">
-                    <label class="form-label-luxe" for="checkoutZip">Postal / ZIP Code <span class="text-danger">*</span></label>
+                    <label class="form-label-luxe" for="checkoutZip">Postal / ZIP Code <span
+                        class="text-danger">*</span></label>
                     <input type="text" class="form-control form-control-luxe" id="checkoutZip" required
                       placeholder="Postal code" value="75008">
                   </div>
@@ -237,7 +258,8 @@
                   <!-- Express Option -->
                   <label class="delivery-option-card selected" for="shippingOptionExpress">
                     <div class="d-flex align-items-center gap-3">
-                      <input class="form-check-input mt-0" type="radio" name="checkoutShipping" id="shippingOptionExpress" value="0" checked>
+                      <input class="form-check-input mt-0" type="radio" name="checkoutShipping"
+                        id="shippingOptionExpress" value="0" checked>
                       <div>
                         <div class="fw-bold text-primary">Complimentary Atelier Express (2–4 Business Days)</div>
                         <div class="small text-muted">DHL Express with signature required, tracked in real-time.</div>
@@ -249,10 +271,12 @@
                   <!-- VIP White Glove Option -->
                   <label class="delivery-option-card" for="shippingOptionVIP">
                     <div class="d-flex align-items-center gap-3">
-                      <input class="form-check-input mt-0" type="radio" name="checkoutShipping" id="shippingOptionVIP" value="35">
+                      <input class="form-check-input mt-0" type="radio" name="checkoutShipping" id="shippingOptionVIP"
+                        value="35">
                       <div>
                         <div class="fw-bold text-primary">White-Glove VIP Courier (Next Business Day)</div>
-                        <div class="small text-muted">Dedicated appointment delivery in gold-embossed presentation packaging.</div>
+                        <div class="small text-muted">Dedicated appointment delivery in gold-embossed presentation
+                          packaging.</div>
                       </div>
                     </div>
                     <span class="fw-bold text-gold">$35.00</span>
@@ -297,32 +321,38 @@
                 <div id="paymentMethodCardBox" class="payment-card-details-box">
                   <div class="row g-3">
                     <div class="col-12">
-                      <label class="form-label-luxe" for="cardHolderName">Name on Card <span class="text-danger">*</span></label>
+                      <label class="form-label-luxe" for="cardHolderName">Name on Card <span
+                          class="text-danger">*</span></label>
                       <input type="text" class="form-control form-control-luxe" id="cardHolderName"
                         placeholder="e.g. Clara Dupont" value="Clara Dupont">
                     </div>
 
                     <div class="col-12">
-                      <label class="form-label-luxe" for="cardNumber">Card Number <span class="text-danger">*</span></label>
+                      <label class="form-label-luxe" for="cardNumber">Card Number <span
+                          class="text-danger">*</span></label>
                       <div class="input-group">
-                        <span class="input-group-text bg-surface border-theme"><i class="bi bi-credit-card text-gold"></i></span>
+                        <span class="input-group-text bg-surface border-theme"><i
+                            class="bi bi-credit-card text-gold"></i></span>
                         <input type="text" class="form-control form-control-luxe" id="cardNumber"
                           placeholder="4532 •••• •••• 8892" maxlength="19" value="4532 8921 7740 8892">
                       </div>
                     </div>
 
                     <div class="col-md-6">
-                      <label class="form-label-luxe" for="cardExpiry">Expiration Date <span class="text-danger">*</span></label>
-                      <input type="text" class="form-control form-control-luxe" id="cardExpiry"
-                        placeholder="MM / YY" maxlength="5" value="08/29">
+                      <label class="form-label-luxe" for="cardExpiry">Expiration Date <span
+                          class="text-danger">*</span></label>
+                      <input type="text" class="form-control form-control-luxe" id="cardExpiry" placeholder="MM / YY"
+                        maxlength="5" value="08/29">
                     </div>
 
                     <div class="col-md-6">
-                      <label class="form-label-luxe" for="cardCvv">Security Code (CVV) <span class="text-danger">*</span></label>
+                      <label class="form-label-luxe" for="cardCvv">Security Code (CVV) <span
+                          class="text-danger">*</span></label>
                       <div class="input-group">
-                        <input type="password" class="form-control form-control-luxe" id="cardCvv"
-                          placeholder="•••" maxlength="4" value="842">
-                        <span class="input-group-text bg-surface border-theme" title="3 or 4 digit code on the back of your card">
+                        <input type="password" class="form-control form-control-luxe" id="cardCvv" placeholder="•••"
+                          maxlength="4" value="842">
+                        <span class="input-group-text bg-surface border-theme"
+                          title="3 or 4 digit code on the back of your card">
                           <i class="bi bi-question-circle text-muted"></i>
                         </span>
                       </div>
@@ -331,26 +361,32 @@
                 </div>
 
                 <!-- Apple Pay / Google Pay Alternate State -->
-                <div id="paymentMethodWalletBox" class="alert alert-info d-flex align-items-center gap-3 p-3" style="display:none;">
+                <div id="paymentMethodWalletBox" class="alert alert-info d-flex align-items-center gap-3 p-3"
+                  style="display:none;">
                   <i class="bi bi-wallet2 fs-3 text-gold"></i>
                   <div class="small">
-                    <strong>Digital Wallet Selected:</strong> You will authenticate with Touch ID / Face ID upon placing your order.
+                    <strong>Digital Wallet Selected:</strong> You will authenticate with Touch ID / Face ID upon placing
+                    your order.
                   </div>
                 </div>
 
                 <!-- PayPal Alternate State -->
-                <div id="paymentMethodPayPalBox" class="alert alert-secondary d-flex align-items-center gap-3 p-3" style="display:none;">
+                <div id="paymentMethodPayPalBox" class="alert alert-secondary d-flex align-items-center gap-3 p-3"
+                  style="display:none;">
                   <i class="bi bi-paypal fs-3 text-primary"></i>
                   <div class="small">
-                    <strong>PayPal Express:</strong> You will be securely connected to PayPal to confirm your billing authorization.
+                    <strong>PayPal Express:</strong> You will be securely connected to PayPal to confirm your billing
+                    authorization.
                   </div>
                 </div>
 
                 <!-- Cash on Boutique Delivery Alternate State -->
-                <div id="paymentMethodCODBox" class="alert alert-warning d-flex align-items-center gap-3 p-3" style="display:none;">
+                <div id="paymentMethodCODBox" class="alert alert-warning d-flex align-items-center gap-3 p-3"
+                  style="display:none;">
                   <i class="bi bi-cash-coin fs-3 text-warning"></i>
                   <div class="small">
-                    <strong>Pay Upon Delivery:</strong> Pay via contactless terminal or cash when your white-glove courier arrives.
+                    <strong>Pay Upon Delivery:</strong> Pay via contactless terminal or cash when your white-glove
+                    courier arrives.
                   </div>
                 </div>
 
@@ -370,7 +406,8 @@
               <div class="checkout-summary-card">
                 <div class="checkout-summary-title">
                   <span>Order Summary</span>
-                  <span class="badge bg-gold-subtle text-gold px-2 py-1 small" id="checkoutBagBadge">1 Silhouettes</span>
+                  <span class="badge bg-gold-subtle text-gold px-2 py-1 small" id="checkoutBagBadge">1
+                    Silhouettes</span>
                 </div>
 
                 <!-- Ordered Items List Container -->
@@ -460,7 +497,8 @@
           <span class="subheading text-gold mb-1 d-block">Order Confirmed · Merci Beaucoup</span>
           <h2 class="font-serif display-5 mb-3">Your Atelier Order is Placed!</h2>
           <p class="text-secondary max-w-600 mx-auto mb-4">
-            Thank you, <strong id="successCustomerName">Clara Dupont</strong>. Your luxury handbag order has been received at our Paris flagship atelier. We are preparing your complimentary gift packaging.
+            Thank you, <strong id="successCustomerName">Clara Dupont</strong>. Your luxury handbag order has been
+            received at our Paris flagship atelier. We are preparing your complimentary gift packaging.
           </p>
 
           <div class="p-3 bg-surface-soft border border-theme rounded max-w-500 mx-auto mb-4 text-start">
@@ -496,7 +534,7 @@
   </div>
 
   <!-- Shared Footer -->
-    <!-- Luxury Footer -->
+  <!-- Luxury Footer -->
   <footer class="footer-luxe">
     <div class="container">
       <div class="row g-4 g-lg-5">
@@ -505,25 +543,35 @@
           <a href="index.html" class="d-inline-block mb-3 text-decoration-none" aria-label="Maison Vélure Paris Home">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="170" height="42" fill="none">
               <g transform="translate(10, 8)">
-                <circle cx="22" cy="22" r="21" stroke="#fff" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.6"/>
-                <circle cx="22" cy="22" r="18" stroke="#fff" stroke-width="1.2"/>
-                <path d="M14 15 L22 30 L30 15" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M18 15 L22 24 L26 15" stroke="#d4af37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="22" cy="12" r="1.5" fill="#d4af37"/>
+                <circle cx="22" cy="22" r="21" stroke="#fff" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.6" />
+                <circle cx="22" cy="22" r="18" stroke="#fff" stroke-width="1.2" />
+                <path d="M14 15 L22 30 L30 15" stroke="#d4af37" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M18 15 L22 24 L26 15" stroke="#d4af37" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <circle cx="22" cy="12" r="1.5" fill="#d4af37" />
               </g>
-              <text x="64" y="32" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="600" letter-spacing="4" fill="#fff">VÉLURE</text>
-              <text x="66" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600" letter-spacing="4.5" fill="#d4af37" opacity="0.85">PARIS · ATELIER 1984</text>
+              <text x="64" y="32" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="600"
+                letter-spacing="4" fill="#fff">VÉLURE</text>
+              <text x="66" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600"
+                letter-spacing="4.5" fill="#d4af37" opacity="0.85">PARIS · ATELIER 1984</text>
             </svg>
           </a>
           <p class="small text-secondary mb-4" style="line-height: 1.7; max-width: 340px;">
-            Maison Vélure is an internationally celebrated French artisanal leathercraft atelier dedicated to creating traceable, handcrafted luxury handbags, totes, and evening purses with lifetime durability.
+            Maison Vélure is an internationally celebrated French artisanal leathercraft atelier dedicated to creating
+            traceable, handcrafted luxury handbags, totes, and evening purses with lifetime durability.
           </p>
           <div class="footer-social-links">
-            <a href="https://facebook.com" class="footer-social-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
-            <a href="https://twitter.com" class="footer-social-btn" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://linkedin.com" class="footer-social-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
-            <a href="https://instagram.com" class="footer-social-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
-            <a href="https://youtube.com" class="footer-social-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+            <a href="https://facebook.com" class="footer-social-btn" aria-label="Facebook" target="_blank"
+              rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com" class="footer-social-btn" aria-label="X (Twitter)" target="_blank"
+              rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://linkedin.com" class="footer-social-btn" aria-label="LinkedIn" target="_blank"
+              rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+            <a href="https://instagram.com" class="footer-social-btn" aria-label="Instagram" target="_blank"
+              rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtube.com" class="footer-social-btn" aria-label="YouTube" target="_blank"
+              rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
 
@@ -544,7 +592,8 @@
         <div class="col-6 col-lg-3 col-md-3">
           <h5>Services</h5>
           <ul class="footer-links">
-            <li><a href="contact.html?inquiry=restoration" class="text-gold fw-semibold">Handbag Restoration & Spa</a></li>
+            <li><a href="contact.html?inquiry=restoration" class="text-gold fw-semibold">Handbag Restoration & Spa</a>
+            </li>
             <li><a href="contact.html?inquiry=monogram">Bespoke Monogramming</a></li>
             <li><a href="about.html">Traceable Italian Leather</a></li>
             <li><a href="contact.html?inquiry=appointment">Private Salon Appointments</a></li>
@@ -567,7 +616,8 @@
             </div>
             <div class="footer-contact-item d-flex align-items-center gap-2 mb-3">
               <i class="bi bi-envelope text-gold"></i>
-              <a href="mailto:concierge@maisonvelure.com" class="small text-secondary text-decoration-none">concierge@maisonvelure.com</a>
+              <a href="mailto:concierge@maisonvelure.com"
+                class="small text-secondary text-decoration-none">concierge@maisonvelure.com</a>
             </div>
             <div class="footer-contact-item d-flex align-items-center gap-2 mb-3">
               <i class="bi bi-clock text-gold"></i>
@@ -986,4 +1036,3 @@
 </body>
 
 </html>
-

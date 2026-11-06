@@ -74,13 +74,8 @@
   <!-- Single Luxury Navbar (Unified 1-Bar Navigation, No Top Bar) -->
   <header class="navbar navbar-expand-lg navbar-luxe sticky-nav">
     <div class="container d-flex align-items-center justify-content-between">
-      <!-- Mobile Hamburger Button -->
-      <button class="navbar-toggler border-0 p-0 text-body order-1 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVelureMenu" aria-controls="navbarVelureMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="bi bi-list fs-2"></i>
-      </button>
-
       <!-- Brand Logo -->
-      <a class="navbar-brand order-2 order-lg-1 mx-auto mx-lg-0" href="index.html" aria-label="Maison Vélure Paris Home">
+      <a class="navbar-brand order-1 order-lg-1 mx-auto mx-lg-0" href="index.html" aria-label="Maison Vélure Paris Home">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="160" height="40" fill="none">
           <g transform="translate(10, 8)">
             <circle cx="22" cy="22" r="21" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.6"/>
@@ -141,7 +136,7 @@
       </nav>
 
       <!-- Action Icons (Theme, RTL, Wishlist, Cart) -->
-      <div class="d-flex align-items-center gap-2 order-3">
+      <div class="d-flex align-items-center gap-2 order-2 order-lg-3">
         <!-- Theme Toggle -->
         <button class="btn-icon theme-toggle-btn" type="button" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
           <i class="bi bi-moon-stars"></i>
@@ -161,6 +156,11 @@
           <span class="badge-count cart-badge-count" style="${cartCount > 0 ? 'display:flex;' : 'display:none;'}">${cartCount}</span>
         </button>
       </div>
+
+      <!-- Mobile Hamburger Button (On the Right on Mobile) -->
+      <button class="navbar-toggler border-0 p-0 text-body order-3 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVelureMenu" aria-controls="navbarVelureMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2"></i>
+      </button>
     </div>
   </header>
       `.trim();

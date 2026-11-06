@@ -698,14 +698,19 @@ img {
     padding-left: 0.65rem !important;
     padding-right: 0.65rem !important;
     display: flex !important;
-    flex-wrap: nowrap !important;
+    flex-wrap: wrap !important;
     align-items: center !important;
     justify-content: space-between !important;
   }
 
+  .navbar-brand,
+  .navbar-brand.order-1,
   .navbar-brand.order-2 {
-    margin-left: 0.35rem !important;
+    order: 1 !important;
+    margin-left: 0 !important;
     margin-right: auto !important;
+    margin-inline-start: 0 !important;
+    margin-inline-end: auto !important;
   }
 
   .navbar-brand svg {
@@ -714,9 +719,13 @@ img {
     height: auto !important;
   }
 
-  .navbar-luxe .d-flex.order-3 {
+  .navbar-luxe .d-flex.order-3,
+  .navbar-luxe .d-flex.order-2 {
+    order: 2 !important;
     gap: 0.25rem !important;
     flex-shrink: 0 !important;
+    margin-left: auto !important;
+    margin-right: 0.35rem !important;
   }
 
   .navbar-luxe .btn-icon,
@@ -735,17 +744,27 @@ img {
     right: -3px !important;
   }
 
-  .navbar-toggler {
+  .navbar-toggler,
+  .navbar-toggler.order-1,
+  .navbar-toggler.order-3 {
+    order: 3 !important;
     width: 34px !important;
     height: 34px !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
     flex-shrink: 0 !important;
+    margin-left: 0.15rem !important;
+    margin-right: 0 !important;
   }
 
   .navbar-toggler i {
     font-size: 1.45rem !important;
+  }
+
+  .navbar-luxe .navbar-collapse {
+    order: 4 !important;
+    width: 100% !important;
   }
 }
 
