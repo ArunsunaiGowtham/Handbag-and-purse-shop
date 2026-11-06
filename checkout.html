@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Secure Checkout & Concierge Delivery — Maison Vélure Paris. Complete your luxury leather order with complimentary worldwide shipping and full buyer protection.">
+  <meta name="keywords"
+    content="handbag checkout, luxury bag payment, secure leather order, atelier delivery, maison velure checkout">
+  <meta name="author" content="Maison Vélure Paris">
+  <title>Secure Checkout & Atelier Concierge | Maison Vélure Paris</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg">
+
+  <!-- Google Fonts & Bootstrap Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Stylesheet & RTL -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+
+  <!-- Static Fallback Single Luxury Navbar -->
+  <header class="navbar navbar-expand-lg navbar-luxe sticky-nav">
+    <div class="container d-flex align-items-center justify-content-between">
+      <button class="navbar-toggler border-0 p-0 text-body order-1 d-lg-none" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarVelureMenu" aria-controls="navbarVelureMenu"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+
+      <a class="navbar-brand order-2 order-lg-1 mx-auto mx-lg-0" href="index.html" aria-label="Maison Vélure Paris Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="160" height="40" fill="none">
+          <g transform="translate(10, 8)">
+            <circle cx="22" cy="22" r="21" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.6" />
+            <circle cx="22" cy="22" r="18" stroke="currentColor" stroke-width="1.2" />
+            <path d="M14 15 L22 30 L30 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M18 15 L22 24 L26 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="22" cy="12" r="1.5" fill="currentColor" />
+          </g>
+          <text x="64" y="32" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="600" letter-spacing="4" fill="currentColor">VÉLURE</text>
+          <text x="66" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600" letter-spacing="4.5" fill="currentColor" opacity="0.75">PARIS · ATELIER 1984</text>
+        </svg>
+      </a>
+
+      <nav class="collapse navbar-collapse justify-content-center order-4 order-lg-2 w-100 w-lg-auto" id="navbarVelureMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+              Home <i class="bi bi-chevron-down ms-1" style="font-size: 0.65rem;"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-luxe">
+              <li><a class="dropdown-item dropdown-item-luxe" href="index.html">Home 1 — General Store</a></li>
+              <li><a class="dropdown-item dropdown-item-luxe" href="index-2.html">Home 2 — Fashion &amp; Collection</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="gifting.html">Gifting Suite</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="d-flex align-items-center gap-2 order-3">
+        <button class="btn-icon theme-toggle-btn" type="button" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button class="btn-icon rtl-toggle-btn" type="button" title="Toggle RTL Direction" aria-label="Toggle RTL" style="font-size: 0.72rem; font-weight: 700;">
+          RTL
+        </button>
+        <a href="shop.html" class="btn-icon" title="Wishlist — View Shop" aria-label="View Shop">
+          <i class="bi bi-heart"></i>
+          <span class="badge-count wishlist-badge-count" style="display:none;">0</span>
+        </a>
+        <button class="btn-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" title="Shopping Bag" aria-label="View Shopping Bag">
+          <i class="bi bi-bag"></i>
+          <span class="badge-count cart-badge-count">1</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Checkout Page Breadcrumb & Header -->
+    <section class="py-4 py-lg-5 bg-surface-soft border-bottom border-theme">
+      <div class="container text-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center small mb-2">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="shop.html">Shop</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+          </ol>
+        </nav>
+        <h1 class="display-4 font-serif mb-2">Secure Atelier Checkout</h1>
+        <p class="text-secondary max-w-700 mx-auto mb-0">
+          Complimentary insured express delivery with tamper-proof seal and authentic Tuscan leather warranty.
+        </p>
+      </div>
+    </section>
+
+    <!-- Checkout Main Content Area -->
+    <section class="py-5 bg-surface">
+      <div class="container">
+        <form id="checkoutMainForm" novalidate>
+          <div class="row g-4 g-xl-5">
+
+            <!-- LEFT COLUMN: Customer Details, Delivery & Payment Method -->
+            <div class="col-lg-7 col-xl-7">
+
+              <!-- SECTION 1: Customer Information & Delivery Address -->
+              <div class="checkout-section-card">
+                <div class="checkout-card-header">
+                  <div class="checkout-header-left">
+                    <span class="step-badge">1</span>
+                    <h5>Customer Details &amp; Address</h5>
+                  </div>
+                  <div class="security-badge">
+                    <i class="bi bi-shield-check text-gold"></i>
+                    <span>Contact Info</span>
+                  </div>
+                </div>
+
+                <!-- Contact Info Fields -->
+                <div class="row g-3 mb-3">
+                  <div class="col-md-6">
+                    <label class="form-label-luxe" for="checkoutEmail">Email Address <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control form-control-luxe" id="checkoutEmail" required
+                      placeholder="e.g. clara.dupont@atelier.fr" value="clara.dupont@paris.com">
+                    <div class="form-text small text-muted">Order confirmation and courier tracking will be sent here.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label-luxe" for="checkoutPhone">Phone Number <span class="text-danger">*</span></label>
+                    <input type="tel" class="form-control form-control-luxe" id="checkoutPhone" required
+                      placeholder="e.g. +33 6 12 34 56 78" value="+33 6 42 68 55 00">
+                    <div class="form-text small text-muted">For delivery courier SMS updates.</div>
+                  </div>
+                </div>
+
+                <hr class="border-theme my-4">
+
+                <!-- Delivery Address Fields -->
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label-luxe" for="checkoutFirstName">First Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control form-control-luxe" id="checkoutFirstName" required
+                      placeholder="First Name" value="Clara">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label-luxe" for="checkoutLastName">Last Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control form-control-luxe" id="checkoutLastName" required
+                      placeholder="Last Name" value="Dupont">
+                  </div>
+
+                  <div class="col-12">
+                    <label class="form-label-luxe" for="checkoutCountry">Country / Region <span class="text-danger">*</span></label>
+                    <select class="form-select form-select-luxe border-theme bg-surface" id="checkoutCountry" required>
+                      <option value="France" selected>France</option>
+                      <option value="United States">United States</option>
+                      <option value="United Kingdom">United Kingdom</option>
+                      <option value="Italy">Italy</option>
+                      <option value="Germany">Germany</option>
+                      <option value="Switzerland">Switzerland</option>
+                      <option value="United Arab Emirates">United Arab Emirates</option>
+                      <option value="Japan">Japan</option>
+                      <option value="Canada">Canada</option>
+                      <option value="Australia">Australia</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12">
+                    <label class="form-label-luxe" for="checkoutAddress">Street Address <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control form-control-luxe" id="checkoutAddress" required
+                      placeholder="House number and street name" value="24 Avenue Montaigne">
+                  </div>
+
+                  <div class="col-12">
+                    <label class="form-label-luxe" for="checkoutApt">Apartment, Suite, Unit (Optional)</label>
+                    <input type="text" class="form-control form-control-luxe" id="checkoutApt"
+                      placeholder="Apartment, suite, or floor" value="Appartement 4B">
+                  </div>
+
+                  <div class="col-md-5">
+                    <label class="form-label-luxe" for="checkoutCity">City <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control form-control-luxe" id="checkoutCity" required
+                      placeholder="City" value="Paris">
+                  </div>
+                  <div class="col-md-4">
+                    <label class="form-label-luxe" for="checkoutState">State / Region <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control form-control-luxe" id="checkoutState" required
+                      placeholder="State or Region" value="Île-de-France">
+                  </div>
+                  <div class="col-md-3">
+                    <label class="form-label-luxe" for="checkoutZip">Postal / ZIP Code <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control form-control-luxe" id="checkoutZip" required
+                      placeholder="Postal code" value="75008">
+                  </div>
+
+                  <div class="col-12 mt-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="saveInfoCheck" checked>
+                      <label class="form-check-label small text-secondary" for="saveInfoCheck">
+                        Save this customer information for seamless 1-click VIP concierge checkout next time.
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SECTION 2: Shipping & Delivery Method -->
+              <div class="checkout-section-card">
+                <div class="checkout-card-header">
+                  <div class="checkout-header-left">
+                    <span class="step-badge">2</span>
+                    <h5>Delivery &amp; Courier Service</h5>
+                  </div>
+                  <div class="security-badge">
+                    <i class="bi bi-box-seam text-gold"></i>
+                    <span>Insured Courier</span>
+                  </div>
+                </div>
+
+                <div class="delivery-options-group">
+                  <!-- Express Option -->
+                  <label class="delivery-option-card selected" for="shippingOptionExpress">
+                    <div class="d-flex align-items-center gap-3">
+                      <input class="form-check-input mt-0" type="radio" name="checkoutShipping" id="shippingOptionExpress" value="0" checked>
+                      <div>
+                        <div class="fw-bold text-primary">Complimentary Atelier Express (2–4 Business Days)</div>
+                        <div class="small text-muted">DHL Express with signature required, tracked in real-time.</div>
+                      </div>
+                    </div>
+                    <span class="badge bg-success-subtle text-success fw-bold px-3 py-2">FREE</span>
+                  </label>
+
+                  <!-- VIP White Glove Option -->
+                  <label class="delivery-option-card" for="shippingOptionVIP">
+                    <div class="d-flex align-items-center gap-3">
+                      <input class="form-check-input mt-0" type="radio" name="checkoutShipping" id="shippingOptionVIP" value="35">
+                      <div>
+                        <div class="fw-bold text-primary">White-Glove VIP Courier (Next Business Day)</div>
+                        <div class="small text-muted">Dedicated appointment delivery in gold-embossed presentation packaging.</div>
+                      </div>
+                    </div>
+                    <span class="fw-bold text-gold">$35.00</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- SECTION 3: Payment Method -->
+              <div class="checkout-section-card">
+                <div class="checkout-card-header">
+                  <div class="checkout-header-left">
+                    <span class="step-badge">3</span>
+                    <h5>Payment Method</h5>
+                  </div>
+                  <div class="security-badge">
+                    <i class="bi bi-shield-lock-fill text-gold"></i>
+                    <span>256-Bit SSL Encrypted</span>
+                  </div>
+                </div>
+
+                <!-- Payment Method Selector Tabs -->
+                <div class="payment-method-selector">
+                  <button type="button" class="payment-tab-btn active" data-method="card">
+                    <i class="bi bi-credit-card-2-front"></i>
+                    <span>Credit / Debit</span>
+                  </button>
+                  <button type="button" class="payment-tab-btn" data-method="applepay">
+                    <i class="bi bi-apple"></i>
+                    <span>Apple Pay</span>
+                  </button>
+                  <button type="button" class="payment-tab-btn" data-method="paypal">
+                    <i class="bi bi-paypal"></i>
+                    <span>PayPal</span>
+                  </button>
+                  <button type="button" class="payment-tab-btn" data-method="cod">
+                    <i class="bi bi-cash-stack"></i>
+                    <span>Boutique COD</span>
+                  </button>
+                </div>
+
+                <!-- Credit Card Details Form -->
+                <div id="paymentMethodCardBox" class="payment-card-details-box">
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <label class="form-label-luxe" for="cardHolderName">Name on Card <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control form-control-luxe" id="cardHolderName"
+                        placeholder="e.g. Clara Dupont" value="Clara Dupont">
+                    </div>
+
+                    <div class="col-12">
+                      <label class="form-label-luxe" for="cardNumber">Card Number <span class="text-danger">*</span></label>
+                      <div class="input-group">
+                        <span class="input-group-text bg-surface border-theme"><i class="bi bi-credit-card text-gold"></i></span>
+                        <input type="text" class="form-control form-control-luxe" id="cardNumber"
+                          placeholder="4532 •••• •••• 8892" maxlength="19" value="4532 8921 7740 8892">
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label-luxe" for="cardExpiry">Expiration Date <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control form-control-luxe" id="cardExpiry"
+                        placeholder="MM / YY" maxlength="5" value="08/29">
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label-luxe" for="cardCvv">Security Code (CVV) <span class="text-danger">*</span></label>
+                      <div class="input-group">
+                        <input type="password" class="form-control form-control-luxe" id="cardCvv"
+                          placeholder="•••" maxlength="4" value="842">
+                        <span class="input-group-text bg-surface border-theme" title="3 or 4 digit code on the back of your card">
+                          <i class="bi bi-question-circle text-muted"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Apple Pay / Google Pay Alternate State -->
+                <div id="paymentMethodWalletBox" class="alert alert-info d-flex align-items-center gap-3 p-3" style="display:none;">
+                  <i class="bi bi-wallet2 fs-3 text-gold"></i>
+                  <div class="small">
+                    <strong>Digital Wallet Selected:</strong> You will authenticate with Touch ID / Face ID upon placing your order.
+                  </div>
+                </div>
+
+                <!-- PayPal Alternate State -->
+                <div id="paymentMethodPayPalBox" class="alert alert-secondary d-flex align-items-center gap-3 p-3" style="display:none;">
+                  <i class="bi bi-paypal fs-3 text-primary"></i>
+                  <div class="small">
+                    <strong>PayPal Express:</strong> You will be securely connected to PayPal to confirm your billing authorization.
+                  </div>
+                </div>
+
+                <!-- Cash on Boutique Delivery Alternate State -->
+                <div id="paymentMethodCODBox" class="alert alert-warning d-flex align-items-center gap-3 p-3" style="display:none;">
+                  <i class="bi bi-cash-coin fs-3 text-warning"></i>
+                  <div class="small">
+                    <strong>Pay Upon Delivery:</strong> Pay via contactless terminal or cash when your white-glove courier arrives.
+                  </div>
+                </div>
+
+                <!-- Billing Matches Shipping -->
+                <div class="form-check mt-3">
+                  <input class="form-check-input" type="checkbox" id="billingSameAsShipping" checked>
+                  <label class="form-check-label small text-secondary" for="billingSameAsShipping">
+                    Billing address matches shipping address.
+                  </label>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN: Order Summary, Promo Code & Place Order Action -->
+            <div class="col-lg-5 col-xl-5">
+              <div class="checkout-summary-card">
+                <div class="checkout-summary-title">
+                  <span>Order Summary</span>
+                  <span class="badge bg-gold-subtle text-gold px-2 py-1 small" id="checkoutBagBadge">1 Silhouettes</span>
+                </div>
+
+                <!-- Ordered Items List Container -->
+                <div class="checkout-items-list" id="checkoutItemsContainer">
+                  <!-- Dynamically rendered from localStorage velure_cart -->
+                </div>
+
+                <!-- Promo Code Box -->
+                <div class="mb-3 pt-2">
+                  <div class="input-group input-group-sm">
+                    <input type="text" class="form-control form-control-luxe text-uppercase" id="checkoutPromoCode"
+                      placeholder="Promo Code (e.g. LUXE20)">
+                    <button class="btn btn-outline-luxe" type="button" id="btnApplyPromo">Apply</button>
+                  </div>
+                  <div id="checkoutPromoMessage" class="small mt-1" style="display:none;"></div>
+                </div>
+
+                <!-- Cost Breakdown Lines -->
+                <div class="checkout-cost-line">
+                  <span>Subtotal</span>
+                  <strong class="text-primary" id="checkoutSubtotal">$345.00</strong>
+                </div>
+
+                <div class="checkout-cost-line">
+                  <span>Shipping &amp; Handling</span>
+                  <span id="checkoutShippingDisplay" class="text-success fw-bold">Complimentary</span>
+                </div>
+
+                <div class="checkout-cost-line" id="checkoutDiscountRow" style="display:none;">
+                  <span class="text-success">Atelier Privilege Discount</span>
+                  <strong class="text-success" id="checkoutDiscountDisplay">-$0.00</strong>
+                </div>
+
+                <div class="checkout-cost-line">
+                  <span>Estimated Tax (VAT 20%)</span>
+                  <span class="text-muted small">Included in price</span>
+                </div>
+
+                <!-- Grand Total Line -->
+                <div class="checkout-total-line">
+                  <div>
+                    <span class="fw-bold d-block text-primary">Grand Total</span>
+                    <span class="text-muted small">Includes all European luxury duties</span>
+                  </div>
+                  <div class="checkout-total-amount" id="checkoutGrandTotal">$345.00</div>
+                </div>
+
+                <!-- Place Order Button -->
+                <button type="submit" class="btn btn-primary btn-lg w-100 py-3 mt-4" id="btnPlaceOrder">
+                  <span id="btnPlaceOrderText">Complete Order &amp; Pay</span>
+                  <i class="bi bi-lock-fill ms-2"></i>
+                </button>
+
+                <!-- Atelier Guarantee & Trust Points -->
+                <div class="checkout-trust-features">
+                  <div class="checkout-trust-item">
+                    <i class="bi bi-patch-check-fill"></i>
+                    <span>100% Certified Full-Grain Tuscan Vegetable-Tanned Leather</span>
+                  </div>
+                  <div class="checkout-trust-item">
+                    <i class="bi bi-arrow-repeat"></i>
+                    <span>Complimentary 30-Day European &amp; International Returns</span>
+                  </div>
+                  <div class="checkout-trust-item">
+                    <i class="bi bi-shield-lock-fill"></i>
+                    <span>Encrypted 256-Bit Financial Checkout Guarantee</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Luxury Order Confirmation Success Modal -->
+  <div class="modal fade modal-luxe" id="orderSuccessModal" tabindex="-1" data-bs-backdrop="static" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content text-center p-4 p-md-5">
+        <div class="modal-body p-0">
+          <div class="mb-4">
+            <i class="bi bi-check-circle-fill text-success" style="font-size: 4rem;"></i>
+          </div>
+          <span class="subheading text-gold mb-1 d-block">Order Confirmed · Merci Beaucoup</span>
+          <h2 class="font-serif display-5 mb-3">Your Atelier Order is Placed!</h2>
+          <p class="text-secondary max-w-600 mx-auto mb-4">
+            Thank you, <strong id="successCustomerName">Clara Dupont</strong>. Your luxury handbag order has been received at our Paris flagship atelier. We are preparing your complimentary gift packaging.
+          </p>
+
+          <div class="p-3 bg-surface-soft border border-theme rounded max-w-500 mx-auto mb-4 text-start">
+            <div class="d-flex justify-content-between small mb-1">
+              <span class="text-muted">Order Number:</span>
+              <strong class="text-gold" id="successOrderNumber">#MV-2026-98412</strong>
+            </div>
+            <div class="d-flex justify-content-between small mb-1">
+              <span class="text-muted">Delivery Address:</span>
+              <span class="text-primary" id="successAddress">24 Avenue Montaigne, Paris</span>
+            </div>
+            <div class="d-flex justify-content-between small mb-1">
+              <span class="text-muted">Estimated Delivery:</span>
+              <strong class="text-success" id="successDeliveryDate">3–5 Business Days</strong>
+            </div>
+            <div class="d-flex justify-content-between small">
+              <span class="text-muted">Total Paid:</span>
+              <strong class="text-primary" id="successTotalPaid">$345.00</strong>
+            </div>
+          </div>
+
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="shop.html" class="btn btn-primary px-4 py-2">
+              <i class="bi bi-bag me-1"></i> Return to Shop
+            </a>
+            <a href="index.html" class="btn btn-outline-luxe px-4 py-2">
+              <i class="bi bi-house me-1"></i> Visit Home
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Footer -->
+    <!-- Luxury Footer -->
+  <footer class="footer-luxe">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <!-- Col 1: Brand Story & Socials -->
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="d-inline-block mb-3 text-decoration-none" aria-label="Maison Vélure Paris Home">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="170" height="42" fill="none">
+              <g transform="translate(10, 8)">
+                <circle cx="22" cy="22" r="21" stroke="#fff" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.6"/>
+                <circle cx="22" cy="22" r="18" stroke="#fff" stroke-width="1.2"/>
+                <path d="M14 15 L22 30 L30 15" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 15 L22 24 L26 15" stroke="#d4af37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="22" cy="12" r="1.5" fill="#d4af37"/>
+              </g>
+              <text x="64" y="32" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="600" letter-spacing="4" fill="#fff">VÉLURE</text>
+              <text x="66" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600" letter-spacing="4.5" fill="#d4af37" opacity="0.85">PARIS · ATELIER 1984</text>
+            </svg>
+          </a>
+          <p class="small text-secondary mb-4" style="line-height: 1.7; max-width: 340px;">
+            Maison Vélure is an internationally celebrated French artisanal leathercraft atelier dedicated to creating traceable, handcrafted luxury handbags, totes, and evening purses with lifetime durability.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://facebook.com" class="footer-social-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com" class="footer-social-btn" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://linkedin.com" class="footer-social-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+            <a href="https://instagram.com" class="footer-social-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtube.com" class="footer-social-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links (Matches Reference Col 2) -->
+        <div class="col-6 col-lg-2 col-md-3">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Company</a></li>
+            <li><a href="shop.html">Atelier Collections</a></li>
+            <li><a href="pricing.html">Pricing & VIP Care</a></li>
+            <li><a href="blog.html">Artisanal Blog</a></li>
+            <li><a href="gifting.html">Gifting Suite</a></li>
+            <li><a href="contact.html">Contact Headquarters</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services (Matches Reference Col 3) -->
+        <div class="col-6 col-lg-3 col-md-3">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html?inquiry=restoration" class="text-gold fw-semibold">Handbag Restoration & Spa</a></li>
+            <li><a href="contact.html?inquiry=monogram">Bespoke Monogramming</a></li>
+            <li><a href="about.html">Traceable Italian Leather</a></li>
+            <li><a href="contact.html?inquiry=appointment">Private Salon Appointments</a></li>
+            <li><a href="gifting.html">VIP Complimentary Packaging</a></li>
+            <li><a href="pricing.html">Lifetime Hardware Warranty</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Atelier & Concierge Info (Matches Reference Col 4) -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Atelier & Concierge Info</h5>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item d-flex align-items-start gap-2 mb-3">
+              <i class="bi bi-geo-alt text-gold mt-1"></i>
+              <span class="small">18 Rue du Faubourg Saint-Honoré, 75008 Paris, France</span>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-telephone text-gold"></i>
+              <a href="tel:+33142685500" class="small text-secondary text-decoration-none">+33 (0)1 42 68 55 00</a>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-envelope text-gold"></i>
+              <a href="mailto:concierge@maisonvelure.com" class="small text-secondary text-decoration-none">concierge@maisonvelure.com</a>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-clock text-gold"></i>
+              <span class="small">Monday – Friday: 10:00 AM – 7:00 PM</span>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-0">
+              <i class="bi bi-calendar-check text-gold"></i>
+              <span class="small">Saturday: 11:00 AM – 6:00 PM (VIP By Request)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+        <div>
+          © <span class="current-year">2026</span> Maison Vélure Paris. All rights reserved.
+        </div>
+        <div class="d-flex gap-4 mt-2 mt-md-0">
+          <a href="privacy-policy.html" class="small text-secondary text-decoration-none">Privacy Policy</a>
+          <a href="terms-of-care.html" class="small text-secondary text-decoration-none">Terms of Care</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div class="modal fade modal-luxe" id="searchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom border-theme">
+          <h5 class="modal-title font-serif fs-4">Search Maison Vélure</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="input-group mb-4">
+            <span class="input-group-text bg-surface border-theme"><i class="bi bi-search text-gold"></i></span>
+            <input type="text" class="form-control form-control-luxe" id="liveSearchInput"
+              placeholder="Search by handbag name, silhouette, material (e.g. Saffiano, Tote, Clutch)...">
+          </div>
+          <div id="liveSearchResults" class="list-group list-group-flush"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Offcanvas Shopping Bag Drawer -->
+  <div class="offcanvas offcanvas-end offcanvas-luxe" tabindex="-1" id="cartOffcanvas"
+    aria-labelledby="cartOffcanvasLabelCheckout">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title font-serif fs-4" id="cartOffcanvasLabelCheckout">Your Shopping Bag</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="free-shipping-bar p-3 border-bottom border-theme bg-surface-soft">
+      <div class="d-flex justify-content-between small mb-1">
+        <span id="freeShippingText">Complimentary Express Shipping on orders over $150</span>
+      </div>
+      <div class="progress" style="height: 6px;">
+        <div class="progress-bar bg-gold" id="freeShippingProgress" role="progressbar" style="width: 100%;"></div>
+      </div>
+    </div>
+    <div class="offcanvas-body" id="cartDrawerItems"></div>
+    <div class="offcanvas-footer p-4 border-top border-theme bg-surface">
+      <div class="d-flex justify-content-between small text-muted mb-1">
+        <span>Bag Subtotal</span>
+        <span id="cartSubtotal">$345.00</span>
+      </div>
+      <div class="d-flex justify-content-between small text-muted mb-1">
+        <span>Estimated Delivery</span>
+        <span id="cartShipping">Complimentary</span>
+      </div>
+      <div class="d-flex justify-content-between small text-success mb-2" id="cartDiscountRow" style="display:none;">
+        <span>Promo Discount</span>
+        <span id="cartDiscount">-$0.00</span>
+      </div>
+      <div class="d-flex justify-content-between fw-bold fs-5 pt-2 border-top border-soft mb-3">
+        <span class="font-serif">Total</span>
+        <span id="cartTotal" class="text-gold">$345.00</span>
+      </div>
+      <button type="button" class="btn btn-primary w-100 py-3" id="btnProceedCheckout">
+        <span>Proceed to Checkout</span>
+        <i class="bi bi-lock-fill ms-1"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Wishlist Modal -->
+  <div class="modal fade modal-luxe" id="wishlistModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom border-theme">
+          <h5 class="modal-title font-serif fs-4">Your Curated Wishlist</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4" id="wishlistItemsContainer"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/blog-data.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Interactive Checkout Controller -->
+  <script>
+    (function () {
+      'use strict';
+
+      const CART_STORAGE_KEY = 'velure_cart';
+      const itemsContainer = document.getElementById('checkoutItemsContainer');
+      const countBadge = document.getElementById('checkoutBagBadge');
+      const subtotalEl = document.getElementById('checkoutSubtotal');
+      const shippingDisplayEl = document.getElementById('checkoutShippingDisplay');
+      const discountRow = document.getElementById('checkoutDiscountRow');
+      const discountDisplayEl = document.getElementById('checkoutDiscountDisplay');
+      const grandTotalEl = document.getElementById('checkoutGrandTotal');
+      const promoInput = document.getElementById('checkoutPromoCode');
+      const btnApplyPromo = document.getElementById('btnApplyPromo');
+      const promoMessage = document.getElementById('checkoutPromoMessage');
+      const checkoutForm = document.getElementById('checkoutMainForm');
+      const btnPlaceOrder = document.getElementById('btnPlaceOrder');
+
+      // State
+      let cart = JSON.parse(localStorage.getItem(CART_STORAGE_KEY)) || [];
+
+      // If user came to checkout with an empty cart, seed a default bag so they can experience the checkout preview
+      if (!Array.isArray(cart) || cart.length === 0) {
+        if (window.PRODUCTS_DATA && window.PRODUCTS_DATA.length > 0) {
+          const sample = window.PRODUCTS_DATA[0];
+          cart = [{
+            id: sample.id,
+            name: sample.name,
+            price: sample.price,
+            image: sample.image,
+            color: sample.colors && sample.colors[0] ? sample.colors[0].name : "Cognac Tan",
+            quantity: 1
+          }];
+          localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
+        }
+      }
+
+      let selectedShippingFee = 0;
+      let appliedPromoDiscount = 0; // percentage e.g. 0.20
+      let appliedPromoCode = '';
+
+      // Payment Tabs handling
+      const tabButtons = document.querySelectorAll('.payment-tab-btn');
+      const cardBox = document.getElementById('paymentMethodCardBox');
+      const walletBox = document.getElementById('paymentMethodWalletBox');
+      const paypalBox = document.getElementById('paymentMethodPayPalBox');
+      const codBox = document.getElementById('paymentMethodCODBox');
+
+      tabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const method = btn.getAttribute('data-method');
+
+          cardBox.style.display = method === 'card' ? 'block' : 'none';
+          walletBox.style.display = method === 'applepay' ? 'flex' : 'none';
+          paypalBox.style.display = method === 'paypal' ? 'flex' : 'none';
+          codBox.style.display = method === 'cod' ? 'flex' : 'none';
+        });
+      });
+
+      // Shipping option radio cards handling
+      const shippingRadios = document.querySelectorAll('input[name="checkoutShipping"]');
+      shippingRadios.forEach(radio => {
+        radio.addEventListener('change', () => {
+          document.querySelectorAll('.delivery-option-card').forEach(c => c.classList.remove('selected'));
+          radio.closest('.delivery-option-card').classList.add('selected');
+          selectedShippingFee = parseFloat(radio.value) || 0;
+          renderSummary();
+        });
+      });
+
+      // Format card number with spaces
+      const cardNumberInput = document.getElementById('cardNumber');
+      if (cardNumberInput) {
+        cardNumberInput.addEventListener('input', (e) => {
+          let val = e.target.value.replace(/\D/g, '').substring(0, 16);
+          let formatted = val.match(/.{1,4}/g)?.join(' ') || val;
+          e.target.value = formatted;
+        });
+      }
+
+      // Format expiry date MM/YY
+      const cardExpiryInput = document.getElementById('cardExpiry');
+      if (cardExpiryInput) {
+        cardExpiryInput.addEventListener('input', (e) => {
+          let val = e.target.value.replace(/\D/g, '').substring(0, 4);
+          if (val.length >= 2) {
+            e.target.value = val.substring(0, 2) + '/' + val.substring(2);
+          } else {
+            e.target.value = val;
+          }
+        });
+      }
+
+      // Render checkout summary items
+      function renderSummary() {
+        if (!itemsContainer) return;
+
+        if (cart.length === 0) {
+          itemsContainer.innerHTML = `
+            <div class="text-center py-4">
+              <i class="bi bi-bag-x text-muted display-4 mb-2 d-block"></i>
+              <h6 class="font-serif">Your shopping bag is empty</h6>
+              <p class="small text-muted mb-3">Add handcrafted silhouettes from our shop.</p>
+              <a href="shop.html" class="btn btn-outline-luxe btn-sm">Explore Shop</a>
+            </div>
+          `;
+          countBadge.textContent = '0 Silhouettes';
+          subtotalEl.textContent = '$0.00';
+          shippingDisplayEl.textContent = '$0.00';
+          grandTotalEl.textContent = '$0.00';
+          if (btnPlaceOrder) btnPlaceOrder.disabled = true;
+          return;
+        }
+
+        if (btnPlaceOrder) btnPlaceOrder.disabled = false;
+
+        let totalQuantity = 0;
+        let subtotal = 0;
+
+        itemsContainer.innerHTML = cart.map((item, index) => {
+          totalQuantity += item.quantity;
+          const itemTotal = item.price * item.quantity;
+          subtotal += itemTotal;
+
+          return `
+            <div class="checkout-item-row">
+              <img src="${item.image}" alt="${item.name}" class="checkout-item-thumb">
+              <div class="checkout-item-info">
+                <div class="checkout-item-name">${item.name}</div>
+                <div class="checkout-item-meta">Color: ${item.color || 'Onyx Black'}</div>
+                <div class="d-flex align-items-center gap-2 mt-1">
+                  <div class="cart-stepper">
+                    <button type="button" class="btn-stepper-minus checkout-qty-minus" data-index="${index}"><i class="bi bi-dash"></i></button>
+                    <input type="text" value="${item.quantity}" readonly>
+                    <button type="button" class="btn-stepper-plus checkout-qty-plus" data-index="${index}"><i class="bi bi-plus"></i></button>
+                  </div>
+                  <button type="button" class="btn btn-link btn-sm text-danger p-0 ms-2 checkout-remove-item" data-index="${index}" title="Remove item">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="checkout-item-price">$${itemTotal.toFixed(2)}</div>
+            </div>
+          `;
+        }).join('');
+
+        countBadge.textContent = `${totalQuantity} ${totalQuantity === 1 ? 'Silhouette' : 'Silhouettes'}`;
+
+        // Shipping calculation
+        let shippingCost = selectedShippingFee;
+        if (selectedShippingFee === 0) {
+          shippingDisplayEl.innerHTML = '<span class="text-success fw-bold">Complimentary</span>';
+        } else {
+          shippingDisplayEl.textContent = `$${selectedShippingFee.toFixed(2)}`;
+        }
+
+        // Promo discount
+        let discountAmount = 0;
+        if (appliedPromoDiscount > 0) {
+          discountAmount = subtotal * appliedPromoDiscount;
+          discountRow.style.display = 'flex';
+          discountDisplayEl.textContent = `-$${discountAmount.toFixed(2)} (${appliedPromoCode})`;
+        } else {
+          discountRow.style.display = 'none';
+        }
+
+        const grandTotal = Math.max(0, subtotal - discountAmount + shippingCost);
+        subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
+        grandTotalEl.textContent = `$${grandTotal.toFixed(2)}`;
+
+        const payTotalEl = document.getElementById('btnPayTotal');
+        if (payTotalEl) {
+          payTotalEl.textContent = `$${grandTotal.toFixed(2)}`;
+        }
+      }
+
+      // Stepper quantity events
+      itemsContainer.addEventListener('click', (e) => {
+        const minusBtn = e.target.closest('.checkout-qty-minus');
+        const plusBtn = e.target.closest('.checkout-qty-plus');
+        const removeBtn = e.target.closest('.checkout-remove-item');
+
+        if (minusBtn) {
+          const idx = parseInt(minusBtn.getAttribute('data-index'), 10);
+          if (cart[idx]) {
+            cart[idx].quantity -= 1;
+            if (cart[idx].quantity <= 0) {
+              cart.splice(idx, 1);
+            }
+            saveAndUpdate();
+          }
+        } else if (plusBtn) {
+          const idx = parseInt(plusBtn.getAttribute('data-index'), 10);
+          if (cart[idx]) {
+            cart[idx].quantity += 1;
+            saveAndUpdate();
+          }
+        } else if (removeBtn) {
+          const idx = parseInt(removeBtn.getAttribute('data-index'), 10);
+          if (cart[idx]) {
+            cart.splice(idx, 1);
+            saveAndUpdate();
+          }
+        }
+      });
+
+      function saveAndUpdate() {
+        localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
+        // Update navbar bag badge
+        const bagBadges = document.querySelectorAll('.cart-badge-count');
+        const count = cart.reduce((sum, item) => sum + (item.quantity || 1), 0);
+        bagBadges.forEach(b => b.textContent = count);
+        renderSummary();
+      }
+
+      // Promo Code apply
+      if (btnApplyPromo) {
+        btnApplyPromo.addEventListener('click', () => {
+          const code = (promoInput.value || '').trim().toUpperCase();
+          if (!code) {
+            promoMessage.style.display = 'block';
+            promoMessage.className = 'small text-danger mt-1';
+            promoMessage.textContent = 'Please enter a valid promotional code.';
+            return;
+          }
+
+          if (code === 'LUXE20' || code === 'PARIS20') {
+            appliedPromoDiscount = 0.20;
+            appliedPromoCode = code;
+            promoMessage.style.display = 'block';
+            promoMessage.className = 'small text-success mt-1';
+            promoMessage.textContent = '20% Atelier Promotional Privilege Applied!';
+            renderSummary();
+          } else if (code === 'WELCOME10') {
+            appliedPromoDiscount = 0.10;
+            appliedPromoCode = code;
+            promoMessage.style.display = 'block';
+            promoMessage.className = 'small text-success mt-1';
+            promoMessage.textContent = '10% Welcome Reward Applied!';
+            renderSummary();
+          } else {
+            promoMessage.style.display = 'block';
+            promoMessage.className = 'small text-danger mt-1';
+            promoMessage.textContent = 'Invalid promo code. Try LUXE20.';
+          }
+        });
+      }
+
+      // Form submission and order simulation
+      if (checkoutForm) {
+        checkoutForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          if (cart.length === 0) {
+            alert('Your shopping bag is empty. Please add a product to proceed.');
+            return;
+          }
+
+          // Simple field validations
+          const firstName = document.getElementById('checkoutFirstName')?.value || 'Valued Customer';
+          const lastName = document.getElementById('checkoutLastName')?.value || '';
+          const address = document.getElementById('checkoutAddress')?.value || '24 Avenue Montaigne';
+          const city = document.getElementById('checkoutCity')?.value || 'Paris';
+          const country = document.getElementById('checkoutCountry')?.value || 'France';
+          const grandTotal = grandTotalEl.textContent;
+
+          // Simulate processing state on button
+          btnPlaceOrder.disabled = true;
+          const origHtml = btnPlaceOrder.innerHTML;
+          btnPlaceOrder.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status"></span>Processing Atelier Order...';
+
+          setTimeout(() => {
+            btnPlaceOrder.disabled = false;
+            btnPlaceOrder.innerHTML = origHtml;
+
+            // Generate simulated order confirmation number
+            const randomId = Math.floor(10000 + Math.random() * 90000);
+            const orderNum = `#MV-2026-${randomId}`;
+
+            // Populate success modal
+            document.getElementById('successCustomerName').textContent = `${firstName} ${lastName}`.trim();
+            document.getElementById('successOrderNumber').textContent = orderNum;
+            document.getElementById('successAddress').textContent = `${address}, ${city}, ${country}`;
+            document.getElementById('successTotalPaid').textContent = grandTotal;
+
+            // Clear cart
+            cart = [];
+            localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
+            const bagBadges = document.querySelectorAll('.cart-badge-count');
+            bagBadges.forEach(b => b.textContent = '0');
+
+            // Show confirmation modal
+            const successModalEl = document.getElementById('orderSuccessModal');
+            if (successModalEl && typeof bootstrap !== 'undefined') {
+              const modalInstance = bootstrap.Modal.getOrCreateInstance(successModalEl);
+              modalInstance.show();
+            }
+
+            renderSummary();
+          }, 1000);
+        });
+      }
+
+      // Initial render on page load
+      renderSummary();
+    })();
+  </script>
+</body>
+
+</html>
+

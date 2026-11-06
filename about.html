@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="About Maison Vélure Paris — Discover our heritage of Tuscan leather craftsmanship, ethical vegetable tanning, and 40 years of artisanal handbag creation.">
+  <meta name="keywords"
+    content="about maison velure, italian leather craftsmanship, artisan handbags, tuscan tanneries, ethical luxury">
+  <meta name="author" content="Maison Vélure Paris">
+  <title>About Our Atelier & Heritage | Maison Vélure Paris</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg">
+
+  <!-- Google Fonts & Bootstrap Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Stylesheet & RTL -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+
+  <!-- Single Luxury Navbar (Unified 1-Bar Navigation, No Top Bar) -->
+  <header class="navbar navbar-expand-lg navbar-luxe sticky-nav">
+    <div class="container d-flex align-items-center justify-content-between">
+      <!-- Mobile Hamburger Button -->
+      <button class="navbar-toggler border-0 p-0 text-body order-1 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVelureMenu" aria-controls="navbarVelureMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+
+      <!-- Brand Logo -->
+      <a class="navbar-brand order-2 order-lg-1 mx-auto mx-lg-0" href="index.html" aria-label="Maison Vélure Paris Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="160" height="40" fill="none">
+          <g transform="translate(10, 8)">
+            <circle cx="22" cy="22" r="21" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.6"/>
+            <circle cx="22" cy="22" r="18" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M14 15 L22 30 L30 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18 15 L22 24 L26 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="22" cy="12" r="1.5" fill="currentColor"/>
+          </g>
+          <text x="64" y="32" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="600" letter-spacing="4" fill="currentColor">VÉLURE</text>
+          <text x="66" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600" letter-spacing="4.5" fill="currentColor" opacity="0.75">PARIS · ATELIER 1984</text>
+        </svg>
+      </a>
+
+      <!-- Primary Navigation Links -->
+      <nav class="collapse navbar-collapse justify-content-center order-4 order-lg-2 w-100 w-lg-auto" id="navbarVelureMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+              Home <i class="bi bi-chevron-down ms-1" style="font-size: 0.65rem;"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-luxe">
+              <li><a class="dropdown-item dropdown-item-luxe " href="index.html">Home 1 — General Store</a></li>
+              <li><a class="dropdown-item dropdown-item-luxe " href="index-2.html">Home 2 — Fashion & Collection</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link " href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link " href="gifting.html">Gifting Suite</a></li>
+          <li class="nav-item"><a class="nav-link " href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link " href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link " href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Icons (Theme, RTL, Search, Wishlist, Cart, Account) -->
+      <div class="d-flex align-items-center gap-2 order-3">
+        <!-- Theme Toggle -->
+        <button class="btn-icon theme-toggle-btn" type="button" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <!-- RTL Toggle -->
+        <button class="btn-icon rtl-toggle-btn" type="button" title="Toggle RTL Direction" aria-label="Toggle RTL" style="font-size: 0.72rem; font-weight: 700;">
+          RTL
+        </button>
+        <!-- Wishlist Trigger -->
+        <a href="shop.html" class="btn-icon" title="Wishlist — View Shop" aria-label="View Shop">
+          <i class="bi bi-heart"></i>
+          <span class="badge-count wishlist-badge-count" style="display:none;">0</span>
+        </a>
+        <!-- Cart Trigger -->
+        <button class="btn-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" title="Shopping Bag" aria-label="View Shopping Bag">
+          <i class="bi bi-bag"></i>
+          <span class="badge-count cart-badge-count">1</span>
+        </button>
+        </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Hero Banner with Unique Background Image -->
+    <section class="page-header-banner page-header-about" style="background-image: url('assets/images/about/about-atelier.jpg');">
+      <div class="container text-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center small mb-2">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">About Us</li>
+          </ol>
+        </nav>
+        <h1 class="display-3 mb-2">The Art of Timeless Leathercraft</h1>
+        <p class="lead max-w-700 mx-auto mb-0">
+          Founded in Florence in 1984, Maison Vélure was born from a singular passion: creating handbags of uncompromised structural integrity and everlasting beauty.
+        </p>
+      </div>
+    </section>
+
+    <!-- Brand Story Section -->
+    <section class="py-5 bg-surface">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="subheading">Our Origins</span>
+            <h2 class="display-4 mb-4">From an Arno River Workshop to the Global Stage</h2>
+            <p class="text-secondary mb-4">
+              Our founder, Henri Vélure, apprenticed under master saddle-makers in the hills overlooking Florence. He
+              observed that while fashion seasons were fleeting, the tactile joy of full-grain vegetable-tanned leather
+              was eternal. Henri committed his life to combining time-honored saddle-stitching with refined Parisian
+              silhouettes.
+            </p>
+            <p class="text-secondary mb-4">
+              Four decades later, Maison Vélure remains family-owned and artisan-led. We resist industrial mass
+              manufacturing. Every single bag is cut by hand, edge-burnished with natural beeswax, and inspected through
+              a twenty-point quality protocol before receiving our gold foil crest.
+            </p>
+            <div class="d-flex gap-4 pt-2">
+              <div>
+                <div class="display-6 font-serif fw-bold text-gold">42+</div>
+                <div class="small text-muted">Years of Heritage</div>
+              </div>
+              <div class="border-start border-theme ps-4">
+                <div class="display-6 font-serif fw-bold text-gold">100%</div>
+                <div class="small text-muted">Tuscan Traceable Hides</div>
+              </div>
+              <div class="border-start border-theme ps-4">
+                <div class="display-6 font-serif fw-bold text-gold">50k+</div>
+                <div class="small text-muted">Cherished Patrons</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="position-relative">
+              <img src="assets/images/about/about-workshop.jpg"
+                alt="Atelier workbench with rolls of leather and brass tools" class="rounded shadow-lg w-100"
+                style="height: 480px; object-fit: cover;">
+              <div
+                class="position-absolute bottom-0 end-0 m-4 p-3 bg-surface rounded shadow-md border border-theme text-start"
+                style="max-width: 260px;">
+                <div class="font-serif fw-bold fs-5">Via dei Conciatori</div>
+                <div class="small text-muted">The original Florentine workshop where our Palermo Tote was first
+                  patterned in 1984.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Ethical Vision -->
+    <section class="py-5 bg-surface-soft">
+      <div class="container py-4">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <span class="subheading">Conscious Luxury</span>
+          <h2 class="display-5 mb-3">Our Mission & Sustainable Vision</h2>
+          <p class="text-secondary">True luxury leaves no destructive footprint. We are devoted to ethical tanning and
+            lifetime longevity.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="p-4 p-lg-5 bg-surface rounded border border-theme h-100 text-center">
+              <div class="btn-icon mx-auto mb-4 bg-gold text-white" style="width: 56px; height: 56px;">
+                <i class="bi bi-flower1 fs-4"></i>
+              </div>
+              <h3 class="font-serif fs-4 mb-3">100% Vegetable Tanning</h3>
+              <p class="small text-secondary mb-0">
+                We strictly utilize natural organic tannins extracted from chestnut wood, quebracho, and mimosa bark.
+                Zero toxic heavy metals or synthetic chromium.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 p-lg-5 bg-surface rounded border border-theme h-100 text-center">
+              <div class="btn-icon mx-auto mb-4 bg-gold text-white" style="width: 56px; height: 56px;">
+                <i class="bi bi-infinity fs-4"></i>
+              </div>
+              <h3 class="font-serif fs-4 mb-3">Heirloom Durability</h3>
+              <p class="small text-secondary mb-0">
+                We design bags to be repaired, not replaced. Every piece includes our complimentary lifetime stitching
+                guarantee and annual spa conditioning program.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 p-lg-5 bg-surface rounded border border-theme h-100 text-center">
+              <div class="btn-icon mx-auto mb-4 bg-gold text-white" style="width: 56px; height: 56px;">
+                <i class="bi bi-recycle fs-4"></i>
+              </div>
+              <h3 class="font-serif fs-4 mb-3">Zero-Waste Leathercraft</h3>
+              <p class="small text-secondary mb-0">
+                Precision pattern skiving ensures all off-cut leather hides are repurposed into our artisan coin purses,
+                card sleeves, and luggage tags.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Craftsmanship Process Breakdown -->
+    <section class="py-5 bg-surface">
+      <div class="container py-4">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <span class="subheading">Four Pillars of Perfection</span>
+          <h2 class="display-5 mb-3">The Anatomy of a Maison Vélure Bag</h2>
+          <p class="text-secondary">Take an intimate look at the four distinct stages required to bring our leather
+            silhouettes to life.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Step 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 border rounded border-theme bg-surface-soft h-100">
+              <div class="display-5 font-serif text-gold mb-2">01</div>
+              <h4 class="font-serif fs-4 mb-2">Hide Selection</h4>
+              <p class="small text-secondary mb-0">
+                Only the top 5% of European full-grain hides are selected. We inspect for natural fiber density, grain
+                uniformity, and organic warmth.
+              </p>
+            </div>
+          </div>
+          <!-- Step 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 border rounded border-theme bg-surface-soft h-100">
+              <div class="display-5 font-serif text-gold mb-2">02</div>
+              <h4 class="font-serif fs-4 mb-2">Hand-Skiving & Cutting</h4>
+              <p class="small text-secondary mb-0">
+                Master artisans hand-cut individual leather panels with surgical shears. Edges are skived down by
+                microns to eliminate bulk along seams.
+              </p>
+            </div>
+          </div>
+          <!-- Step 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 border rounded border-theme bg-surface-soft h-100">
+              <div class="display-5 font-serif text-gold mb-2">03</div>
+              <h4 class="font-serif fs-4 mb-2">Double Saddle Stitch</h4>
+              <p class="small text-secondary mb-0">
+                Two needles pass through every pre-punched awl hole with beeswax-coated linen thread, creating an
+                interlocking knot that cannot unravel.
+              </p>
+            </div>
+          </div>
+          <!-- Step 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 border rounded border-theme bg-surface-soft h-100">
+              <div class="display-5 font-serif text-gold mb-2">04</div>
+              <h4 class="font-serif fs-4 mb-2">Edge Lacquer & Polish</h4>
+              <p class="small text-secondary mb-0">
+                Seven successive layers of vegetable lacquer are applied by hand, hand-sanded between coats, and buffed
+                to a smooth glass-like finish.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Master Artisans & Creative Team -->
+    <section class="py-5 bg-surface-soft">
+      <div class="container py-4">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <span class="subheading">Master Artisans</span>
+          <h2 class="display-5 mb-3">Meet the Hands Behind the Leather</h2>
+          <p class="text-secondary">Dedicated craftswomen and craftsmen who preserve centuries of European leather
+            artistry.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4">
+            <div class="card border-theme bg-surface overflow-hidden text-center">
+              <div style="height: 320px; overflow: hidden;">
+                <img src="assets/images/about/about-craftsman.jpg" alt="Matteo Rossi, Head of Leathercraft"
+                  class="w-100 h-100 object-fit-cover">
+              </div>
+              <div class="card-body p-4">
+                <h4 class="font-serif fs-4 mb-1">Matteo Rossi</h4>
+                <div class="small text-gold text-uppercase fw-bold letter-spacing-1 mb-2">Master Leather Artisan</div>
+                <p class="small text-secondary mb-0">34 years mastering Florentine saddle stitching and hand-painted
+                  edge lacquering.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-theme bg-surface overflow-hidden text-center">
+              <div style="height: 320px; overflow: hidden;">
+                <img src="assets/images/about/about-atelier.jpg" alt="Camille Laurent, Creative Director"
+                  class="w-100 h-100 object-fit-cover">
+              </div>
+              <div class="card-body p-4">
+                <h4 class="font-serif fs-4 mb-1">Camille Laurent</h4>
+                <div class="small text-gold text-uppercase fw-bold letter-spacing-1 mb-2">Creative Director, Paris</div>
+                <p class="small text-secondary mb-0">Former couture accessories stylist translating runway architecture
+                  into everyday silhouettes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Maison Vélure -->
+    <section class="py-5 bg-surface">
+      <div class="container py-4">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <span class="subheading">The Maison Vélure Promise</span>
+          <h2 class="display-5 mb-3">Why Discerning Patrons Choose Us</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 border rounded border-theme text-center h-100">
+              <i class="bi bi-shield-check text-gold fs-1 mb-3 d-block"></i>
+              <h4 class="font-serif fs-5 mb-2">Lifetime Stitch Guarantee</h4>
+              <p class="small text-secondary mb-0">Complimentary stitching repairs for the lifetime of your bag,
+                honoring our commitment to generational heirlooms.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 border rounded border-theme text-center h-100">
+              <i class="bi bi-pen text-gold fs-1 mb-3 d-block"></i>
+              <h4 class="font-serif fs-5 mb-2">Complimentary Monogram</h4>
+              <p class="small text-secondary mb-0">Personalize your handbag with blind embossing or 24K gold foil
+                initials applied by our boutique hot-stamp artists.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 border rounded border-theme text-center h-100">
+              <i class="bi bi-box2-heart text-gold fs-1 mb-3 d-block"></i>
+              <h4 class="font-serif fs-5 mb-2">Couture Packaging</h4>
+              <p class="small text-secondary mb-0">Every delivery arrives in a heavy rigid gold-embossed keepsake box,
+                organic cotton dustbag, and grosgrain ribbon.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 border rounded border-theme text-center h-100">
+              <i class="bi bi-airplane text-gold fs-1 mb-3 d-block"></i>
+              <h4 class="font-serif fs-5 mb-2">Complimentary Express</h4>
+              <p class="small text-secondary mb-0">Enjoy 2-3 business day worldwide DHL Express delivery with custom
+                duties and taxes prepaid on orders over $150.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="py-5 bg-surface-soft text-center border-top border-theme">
+      <div class="container py-4">
+        <span class="subheading">Experience The Collection</span>
+        <h2 class="display-4 mb-3">Begin Your Heirloom Journey</h2>
+        <p class="lead max-w-700 mx-auto text-secondary mb-4">
+          Explore our complete collection of handcrafted totes, evening clutches, backpacks, and satchels.
+        </p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="shop.html" class="btn btn-luxe btn-lg">Shop All Handbags</a>
+          <a href="contact.html" class="btn btn-outline-luxe btn-lg">Contact Concierge</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Luxury Footer -->
+  <footer class="footer-luxe">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <!-- Col 1: Brand Story & Socials -->
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="d-inline-block mb-3 text-decoration-none" aria-label="Maison Vélure Paris Home">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="170" height="42" fill="none">
+              <g transform="translate(10, 8)">
+                <circle cx="22" cy="22" r="21" stroke="#fff" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.6"/>
+                <circle cx="22" cy="22" r="18" stroke="#fff" stroke-width="1.2"/>
+                <path d="M14 15 L22 30 L30 15" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 15 L22 24 L26 15" stroke="#d4af37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="22" cy="12" r="1.5" fill="#d4af37"/>
+              </g>
+              <text x="64" y="32" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="600" letter-spacing="4" fill="#fff">VÉLURE</text>
+              <text x="66" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600" letter-spacing="4.5" fill="#d4af37" opacity="0.85">PARIS · ATELIER 1984</text>
+            </svg>
+          </a>
+          <p class="small text-secondary mb-4" style="line-height: 1.7; max-width: 340px;">
+            Maison Vélure is an internationally celebrated French artisanal leathercraft atelier dedicated to creating traceable, handcrafted luxury handbags, totes, and evening purses with lifetime durability.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://facebook.com" class="footer-social-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com" class="footer-social-btn" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://linkedin.com" class="footer-social-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+            <a href="https://instagram.com" class="footer-social-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtube.com" class="footer-social-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links (Matches Reference Col 2) -->
+        <div class="col-6 col-lg-2 col-md-3">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Company</a></li>
+            <li><a href="shop.html">Atelier Collections</a></li>
+            <li><a href="pricing.html">Pricing & VIP Care</a></li>
+            <li><a href="blog.html">Artisanal Blog</a></li>
+            <li><a href="gifting.html">Gifting Suite</a></li>
+            <li><a href="contact.html">Contact Headquarters</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services (Matches Reference Col 3) -->
+        <div class="col-6 col-lg-3 col-md-3">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html?inquiry=restoration" class="text-gold fw-semibold">Handbag Restoration & Spa</a></li>
+            <li><a href="contact.html?inquiry=monogram">Bespoke Monogramming</a></li>
+            <li><a href="about.html">Traceable Italian Leather</a></li>
+            <li><a href="contact.html?inquiry=appointment">Private Salon Appointments</a></li>
+            <li><a href="gifting.html">VIP Complimentary Packaging</a></li>
+            <li><a href="pricing.html">Lifetime Hardware Warranty</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Atelier & Concierge Info (Matches Reference Col 4) -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Atelier & Concierge Info</h5>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item d-flex align-items-start gap-2 mb-3">
+              <i class="bi bi-geo-alt text-gold mt-1"></i>
+              <span class="small">18 Rue du Faubourg Saint-Honoré, 75008 Paris, France</span>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-telephone text-gold"></i>
+              <a href="tel:+33142685500" class="small text-secondary text-decoration-none">+33 (0)1 42 68 55 00</a>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-envelope text-gold"></i>
+              <a href="mailto:concierge@maisonvelure.com" class="small text-secondary text-decoration-none">concierge@maisonvelure.com</a>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-clock text-gold"></i>
+              <span class="small">Monday – Friday: 10:00 AM – 7:00 PM</span>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-0">
+              <i class="bi bi-calendar-check text-gold"></i>
+              <span class="small">Saturday: 11:00 AM – 6:00 PM (VIP By Request)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+        <div>
+          © <span class="current-year">2026</span> Maison Vélure Paris. All rights reserved.
+        </div>
+        <div class="d-flex gap-4 mt-2 mt-md-0">
+          <a href="privacy-policy.html" class="small text-secondary text-decoration-none">Privacy Policy</a>
+          <a href="terms-of-care.html" class="small text-secondary text-decoration-none">Terms of Care</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared Drawers and Modals -->
+  <div class="offcanvas offcanvas-end offcanvas-luxe" tabindex="-1" id="cartOffcanvas"
+    aria-labelledby="cartOffcanvasLabelAbout">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title font-serif fs-4" id="cartOffcanvasLabelAbout">Your Shopping Bag</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="shipping-progress-box">
+      <div class="d-flex justify-content-between small mb-1" id="freeShippingText">
+        Add <strong>$150.00</strong> more for Complimentary Express Shipping
+      </div>
+      <div class="progress progress-luxe">
+        <div class="progress-bar" id="freeShippingProgress" style="width: 75%;"></div>
+      </div>
+    </div>
+    <div class="offcanvas-body p-3" id="cartDrawerItems"></div>
+    <div class="cart-drawer-footer">
+      <div class="input-group input-group-sm mb-3">
+        <input type="text" class="form-control form-control-luxe" id="promoCodeInput"
+          placeholder="Promo code (e.g. LUXE20)">
+        <button class="btn btn-outline-luxe" type="button" id="btnApplyPromo">Apply</button>
+      </div>
+      <div class="d-flex justify-content-between small text-muted mb-1">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">$345.00</span>
+      </div>
+      <div class="d-flex justify-content-between small text-muted mb-1">
+        <span>Estimated Delivery</span>
+        <span id="cartShipping">Complimentary</span>
+      </div>
+      <div class="d-flex justify-content-between small text-success mb-2" id="cartDiscountRow" style="display:none;">
+        <span>Promo Discount</span>
+        <span id="cartDiscount">-$0.00</span>
+      </div>
+      <div class="d-flex justify-content-between fw-bold fs-5 pt-2 border-top border-soft mb-3">
+        <span class="font-serif">Total</span>
+        <span id="cartTotal" class="text-gold">$345.00</span>
+      </div>
+      <button type="button" class="btn btn-primary w-100 py-3" id="btnProceedCheckout">
+        <span>Proceed to Checkout</span>
+        <i class="bi bi-lock-fill ms-1"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="modal fade modal-luxe" id="wishlistModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom border-theme">
+          <h5 class="modal-title font-serif fs-4">Your Curated Wishlist</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4" id="wishlistItemsContainer"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-luxe" id="quickViewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom border-theme">
+          <span class="subheading mb-0" id="quickViewCategory">Handbags</span>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-6">
+              <div class="bg-surface-soft rounded overflow-hidden" style="height: 360px;">
+                <img src="assets/images/products/totes/tote-1.jpg" id="quickViewMainImg" alt="Quick view main bag"
+                  class="w-100 h-100 object-fit-cover">
+              </div>
+              <div class="quickview-thumb-gallery" id="quickViewGallery"></div>
+            </div>
+            <div class="col-md-6">
+              <h3 class="font-serif fs-3 mb-2" id="quickViewTitle">Handbag Title</h3>
+              <div class="d-flex align-items-baseline gap-2 mb-3">
+                <span class="fs-4 fw-bold text-gold" id="quickViewPrice">$0.00</span>
+                <span class="text-muted text-decoration-line-through small" id="quickViewOldPrice">$0.00</span>
+              </div>
+              <p class="small text-secondary mb-3" id="quickViewDesc">Description goes here.</p>
+              <div class="mb-3">
+                <span class="form-label-luxe d-block">Material:</span>
+                <span class="small text-muted" id="quickViewMaterial">Tuscan Leather</span>
+              </div>
+              <div class="mb-3">
+                <span class="form-label-luxe d-block">Dimensions:</span>
+                <span class="small text-muted" id="quickViewDimensions">38cm x 30cm</span>
+              </div>
+              <div class="mb-3">
+                <span class="form-label-luxe d-block">Available Colors:</span>
+                <div class="d-flex gap-2" id="quickViewSwatches"></div>
+              </div>
+              <div class="d-flex gap-2 align-items-center pt-3 border-top border-theme">
+                <div class="cart-stepper">
+                  <button type="button" onclick="this.nextElementSibling.stepDown()"><i class="bi bi-dash"></i></button>
+                  <input type="number" id="quickViewQty" value="1" min="1" max="10" readonly>
+                  <button type="button" onclick="this.previousElementSibling.stepUp()"><i
+                      class="bi bi-plus"></i></button>
+                </div>
+                <button type="button" class="btn btn-primary flex-grow-1" id="quickViewAddBtn">Add to Bag</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-luxe" id="searchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom border-theme">
+          <h5 class="modal-title font-serif fs-4">Search Our Atelier</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="input-group mb-3">
+            <span class="input-group-text bg-transparent border-theme"><i class="bi bi-search text-gold"></i></span>
+            <input type="search" class="form-control form-control-luxe" id="globalSearchInput"
+              placeholder="Search by silhouette, color, leather type..." autocomplete="off">
+          </div>
+          <div id="globalSearchResults">
+            <p class="text-muted small text-center py-3">Type bag silhouette, category, or leather finish...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-luxe" id="checkoutDemoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header border-bottom border-theme">
+          <h5 class="modal-title font-serif fs-4">Maison Vélure Secure Checkout (Demo)</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="alert alert-info d-flex align-items-center gap-2 mb-4" role="alert">
+            <i class="bi bi-info-circle-fill fs-5"></i>
+            <div class="small"><strong>Frontend Demonstration:</strong> No real payment or orders are processed.</div>
+          </div>
+          <div id="checkoutDemoSuccess" style="display:none;" class="alert alert-success p-4 text-center">
+            <i class="bi bi-check-circle-fill display-4 text-success d-block mb-3"></i>
+            <h4 class="font-serif">Demonstration Order Simulated!</h4>
+            <p class="small text-muted mb-0">Your test order confirmation #MV-2026-9812 has been simulated. Your
+              shopping bag has been cleared.</p>
+          </div>
+          <form id="checkoutDemoForm" class="row g-3">
+            <div class="col-md-6"><label class="form-label-luxe">First Name</label><input type="text"
+                class="form-control form-control-luxe" required value="Clara"></div>
+            <div class="col-md-6"><label class="form-label-luxe">Last Name</label><input type="text"
+                class="form-control form-control-luxe" required value="Dupont"></div>
+            <div class="col-12"><label class="form-label-luxe">Delivery Address</label><input type="text"
+                class="form-control form-control-luxe" required value="24 Avenue Montaigne"></div>
+            <div class="col-12 pt-3"><button type="submit" class="btn btn-primary w-100 py-3">Simulate Order
+                Placement</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/blog-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Contact Maison Vélure Paris — Boutique concierge, private atelier appointments, bespoke monogramming consultations, and customer care.">
+  <meta name="keywords"
+    content="contact handbag boutique, paris handbag atelier, luxury leather customer service, book boutique appointment">
+  <meta name="author" content="Maison Vélure Paris">
+  <title>Client Concierge & Salons | Maison Vélure Paris</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg">
+
+  <!-- Google Fonts & Bootstrap Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Stylesheet & RTL -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+
+  <!-- Top Announcement Bar -->
+  <!-- Single Luxury Navbar (Unified 1-Bar Navigation, No Top Bar) -->
+  <header class="navbar navbar-expand-lg navbar-luxe sticky-nav">
+    <div class="container d-flex align-items-center justify-content-between">
+      <!-- Mobile Hamburger Button -->
+      <button class="navbar-toggler border-0 p-0 text-body order-1 d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarVelureMenu" aria-controls="navbarVelureMenu" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+
+      <!-- Brand Logo -->
+      <a class="navbar-brand order-2 order-lg-1 mx-auto mx-lg-0" href="index.html"
+        aria-label="Maison Vélure Paris Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="160" height="40" fill="none">
+          <g transform="translate(10, 8)">
+            <circle cx="22" cy="22" r="21" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2"
+              opacity="0.6" />
+            <circle cx="22" cy="22" r="18" stroke="currentColor" stroke-width="1.2" />
+            <path d="M14 15 L22 30 L30 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M18 15 L22 24 L26 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <circle cx="22" cy="12" r="1.5" fill="currentColor" />
+          </g>
+          <text x="64" y="32" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="600"
+            letter-spacing="4" fill="currentColor">VÉLURE</text>
+          <text x="66" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600"
+            letter-spacing="4.5" fill="currentColor" opacity="0.75">PARIS · ATELIER 1984</text>
+        </svg>
+      </a>
+
+      <!-- Primary Navigation Links -->
+      <nav class="collapse navbar-collapse justify-content-center order-4 order-lg-2 w-100 w-lg-auto"
+        id="navbarVelureMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+              data-bs-display="static" aria-expanded="false">
+              Home <i class="bi bi-chevron-down ms-1" style="font-size: 0.65rem;"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-luxe">
+              <li><a class="dropdown-item dropdown-item-luxe " href="index.html">Home 1 — General Store</a></li>
+              <li><a class="dropdown-item dropdown-item-luxe " href="index-2.html">Home 2 — Fashion & Collection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link " href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link " href="gifting.html">Gifting Suite</a></li>
+          <li class="nav-item"><a class="nav-link " href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link " href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link " href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Icons (Theme, RTL, Search, Wishlist, Cart, Account) -->
+      <div class="d-flex align-items-center gap-2 order-3">
+        <!-- Theme Toggle -->
+        <button class="btn-icon theme-toggle-btn" type="button" title="Toggle Light/Dark Theme"
+          aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <!-- RTL Toggle -->
+        <button class="btn-icon rtl-toggle-btn" type="button" title="Toggle RTL Direction" aria-label="Toggle RTL"
+          style="font-size: 0.72rem; font-weight: 700;">
+          RTL
+        </button>
+        <!-- Wishlist Trigger -->
+        <a href="shop.html" class="btn-icon" title="Wishlist — View Shop" aria-label="View Shop">
+          <i class="bi bi-heart"></i>
+          <span class="badge-count wishlist-badge-count" style="display:none;">0</span>
+        </a>
+        <!-- Cart Trigger -->
+        <button class="btn-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas"
+          title="Shopping Bag" aria-label="View Shopping Bag">
+          <i class="bi bi-bag"></i>
+          <span class="badge-count cart-badge-count">1</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Contact Header with Unique Background Image -->
+    <section class="page-header-banner page-header-contact"
+      style="background-image: url('assets/images/banners/banner-artisan.jpg'); background-position: center 68%;">
+      <div class="container text-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center small mb-2">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+          </ol>
+        </nav>
+        <h1 class="display-3 font-serif mb-2">Atelier Concierge & Salons</h1>
+        <p class="lead max-w-700 mx-auto mb-0">
+          Our client advisors are at your service for bespoke monogramming consultations, private boutique viewings, and
+          order inquiries.
+        </p>
+      </div>
+    </section>
+
+    <!-- Flagship Boutiques Cards -->
+    <section class="py-5 bg-surface">
+      <div class="container py-2">
+        <div class="row g-4 mb-5">
+          <!-- Paris -->
+          <div class="col-md-4">
+            <div
+              class="p-4 border rounded border-theme bg-surface-soft h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <div class="d-flex align-items-center gap-2 text-gold">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <span class="small text-uppercase fw-bold letter-spacing-1">Paris Flagship</span>
+                  </div>
+                  <span class="badge border border-theme bg-surface text-gold small">Primary</span>
+                </div>
+                <h4 class="font-serif fs-4 mb-2">Faubourg Saint-Honoré</h4>
+                <p class="small text-secondary mb-3">18 Rue du Faubourg Saint-Honoré<br>75008 Paris, France</p>
+                <div class="small text-muted mb-1"><i class="bi bi-clock me-2 text-gold"></i>Mon – Sat: 10:00 – 19:00
+                </div>
+                <div class="small text-muted mb-1"><i class="bi bi-telephone me-2 text-gold"></i>+33 (0)1 42 68 55 00
+                </div>
+                <div class="small text-muted mb-3"><i class="bi bi-envelope me-2 text-gold"></i>paris@maisonvelure.com
+                </div>
+              </div>
+              <div class="pt-3 border-top border-theme">
+                <button type="button" class="btn btn-outline-luxe btn-sm w-100 boutique-select-trigger"
+                  data-boutique="paris">
+                  <i class="bi bi-geo-alt-fill text-gold me-1"></i> Locate on Map
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milan -->
+          <div class="col-md-4">
+            <div
+              class="p-4 border rounded border-theme bg-surface-soft h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <div class="d-flex align-items-center gap-2 text-gold">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <span class="small text-uppercase fw-bold letter-spacing-1">Milan Atelier</span>
+                  </div>
+                  <span class="badge border border-theme bg-surface text-secondary small">Italy</span>
+                </div>
+                <h4 class="font-serif fs-4 mb-2">Via Montenapoleone</h4>
+                <p class="small text-secondary mb-3">Via Montenapoleone 14<br>20121 Milano, Italy</p>
+                <div class="small text-muted mb-1"><i class="bi bi-clock me-2 text-gold"></i>Mon – Sat: 10:30 – 19:30
+                </div>
+                <div class="small text-muted mb-1"><i class="bi bi-telephone me-2 text-gold"></i>+39 02 7600 3411</div>
+                <div class="small text-muted mb-3"><i class="bi bi-envelope me-2 text-gold"></i>milano@maisonvelure.com
+                </div>
+              </div>
+              <div class="pt-3 border-top border-theme">
+                <button type="button" class="btn btn-outline-luxe btn-sm w-100 boutique-select-trigger"
+                  data-boutique="milan">
+                  <i class="bi bi-geo-alt-fill text-gold me-1"></i> Locate on Map
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- New York -->
+          <div class="col-md-4">
+            <div
+              class="p-4 border rounded border-theme bg-surface-soft h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <div class="d-flex align-items-center gap-2 text-gold">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <span class="small text-uppercase fw-bold letter-spacing-1">New York Salon</span>
+                  </div>
+                  <span class="badge border border-theme bg-surface text-secondary small">USA</span>
+                </div>
+                <h4 class="font-serif fs-4 mb-2">Madison Avenue</h4>
+                <p class="small text-secondary mb-3">740 Madison Avenue<br>New York, NY 10065, USA</p>
+                <div class="small text-muted mb-1"><i class="bi bi-clock me-2 text-gold"></i>Mon – Sat: 11:00 – 18:00
+                </div>
+                <div class="small text-muted mb-1"><i class="bi bi-telephone me-2 text-gold"></i>+1 (212) 843-9200</div>
+                <div class="small text-muted mb-3"><i class="bi bi-envelope me-2 text-gold"></i>newyork@maisonvelure.com
+                </div>
+              </div>
+              <div class="pt-3 border-top border-theme">
+                <button type="button" class="btn btn-outline-luxe btn-sm w-100 boutique-select-trigger"
+                  data-boutique="newyork">
+                  <i class="bi bi-geo-alt-fill text-gold me-1"></i> Locate on Map
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form & Concierge Information -->
+        <div class="row g-4 g-lg-5 align-items-start">
+          <div class="col-lg-7">
+            <div class="p-4 p-md-5 border rounded border-theme bg-surface shadow-sm">
+              <span class="subheading">Direct Communication</span>
+              <h2 class="font-serif fs-3 mb-2">Send an Atelier Enquiry</h2>
+              <p class="small text-muted mb-4">Please complete the form below. All fields are verified against our
+                validation criteria.</p>
+
+              <!-- Honest submission feedback alert container -->
+              <div id="contactFeedbackAlert" class="mb-4"></div>
+
+              <form id="contactUsForm" novalidate>
+                <div class="row g-3">
+                  <!-- Name Field -->
+                  <div class="col-md-6">
+                    <label for="contactName" class="form-label-luxe">Your Full Name <span
+                        class="text-danger">*</span></label>
+                    <input type="text" class="form-control form-control-luxe" id="contactName"
+                      placeholder="e.g. Eleanor Vance" required>
+                    <div class="form-feedback invalid-feedback">Name cannot be numbers-only and requires at least 2
+                      letters.</div>
+                  </div>
+
+                  <!-- Email Field -->
+                  <div class="col-md-6">
+                    <label for="contactEmail" class="form-label-luxe">Email Address <span
+                        class="text-danger">*</span></label>
+                    <input type="email" class="form-control form-control-luxe" id="contactEmail"
+                      placeholder="e.g. eleanor@example.com" required>
+                    <div class="form-feedback invalid-feedback">Please enter a valid email address with @ and domain.
+                    </div>
+                  </div>
+
+                  <!-- Phone Field -->
+                  <div class="col-md-6">
+                    <label for="contactPhone" class="form-label-luxe">Phone Number <span
+                        class="text-danger">*</span></label>
+                    <input type="tel" class="form-control form-control-luxe" id="contactPhone"
+                      placeholder="e.g. +33 1 42 68 55 00" required>
+                    <div class="form-feedback invalid-feedback">Phone must not contain alphabetic letters and must
+                      contain 7-15 digits.</div>
+                  </div>
+
+                  <!-- Subject Field -->
+                  <div class="col-md-6">
+                    <label for="contactSubject" class="form-label-luxe">Topic of Enquiry <span
+                        class="text-danger">*</span></label>
+                    <select class="form-select form-control-luxe" id="contactSubject" required>
+                      <option value="" selected disabled>Select an inquiry category...</option>
+                      <option value="order">Online Order & Tracking Status</option>
+                      <option value="monogram">Bespoke Monogramming Custom Request</option>
+                      <option value="appointment">Private Boutique Appointment Viewing</option>
+                      <option value="care">Leather Care & Repair Warranty</option>
+                      <option value="press">Press & Wholesale Partnerships</option>
+                    </select>
+                    <div class="form-feedback invalid-feedback">Please select a topic of enquiry.</div>
+                  </div>
+
+                  <!-- Message Field -->
+                  <div class="col-12">
+                    <label for="contactMessage" class="form-label-luxe">Your Message <span
+                        class="text-danger">*</span></label>
+                    <textarea class="form-control form-control-luxe" id="contactMessage" rows="5"
+                      placeholder="Tell us how we can assist your handbag selection or order inquiry..."
+                      required></textarea>
+                    <div class="form-feedback invalid-feedback">Please enter a detailed message of at least 15
+                      characters.</div>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="col-12 pt-2">
+                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                      <span>Submit Atelier Enquiry</span>
+                      <i class="bi bi-arrow-right ms-1"></i>
+                    </button>
+                    <div class="demo-badge-notice mt-3 w-100 justify-content-center">
+                      <i class="bi bi-info-circle"></i>
+                      <span>Frontend Template Notice: Validates input client-side. Honest feedback is displayed upon
+                        submission.</span>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Real Map & FAQ -->
+          <div class="col-lg-5">
+            <!-- Real Interactive Luxury Boutique Map Card -->
+            <div class="border rounded border-theme bg-surface-soft overflow-hidden mb-4 shadow-sm"
+              id="boutiqueMapCard">
+              <div
+                class="p-3 border-bottom border-theme d-flex flex-wrap justify-content-between align-items-center gap-2">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-geo-alt-fill text-gold fs-5"></i>
+                  <div>
+                    <span class="small fw-bold font-serif d-block">Global Boutiques Map</span>
+                    <span class="text-muted" style="font-size: 0.72rem;">Interactive Flagship Locations</span>
+                  </div>
+                </div>
+                <!-- Boutique Location Switcher Tabs -->
+                <div class="btn-group btn-group-sm" role="group" aria-label="Boutique Location Switcher">
+                  <button type="button" class="btn btn-outline-luxe active boutique-map-btn"
+                    data-boutique="paris">Paris</button>
+                  <button type="button" class="btn btn-outline-luxe boutique-map-btn"
+                    data-boutique="milan">Milan</button>
+                  <button type="button" class="btn btn-outline-luxe boutique-map-btn" data-boutique="newyork">New
+                    York</button>
+                </div>
+              </div>
+
+              <!-- Real Interactive Google Map Embed Frame -->
+              <div class="boutique-map-container position-relative overflow-hidden"
+                style="height: 310px; width: 100%; background-color: var(--bg-surface-alt);">
+                <div id="mapLoadingSpinner"
+                  class="position-absolute top-50 start-50 translate-middle text-muted small d-flex align-items-center gap-2"
+                  style="z-index: 1;">
+                  <div class="spinner-border spinner-border-sm text-gold" role="status">
+                    <span class="visually-hidden">Loading interactive map...</span>
+                  </div>
+                  <span class="font-serif">Loading Atelier Map...</span>
+                </div>
+                <iframe id="boutiqueMapFrame"
+                  src="https://maps.google.com/maps?q=18+Rue+du+Faubourg+Saint-Honor%C3%A9+75008+Paris+France&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                  width="100%" height="100%" style="border: 0; display: block; position: relative; z-index: 2;"
+                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                  title="Maison Vélure Paris Flagship Location"
+                  onload="var s = document.getElementById('mapLoadingSpinner'); if(s) s.style.display='none';">
+                </iframe>
+              </div>
+
+              <!-- Active Boutique Information & Directions Bar -->
+              <div class="p-3 bg-surface border-top border-theme">
+                <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                  <div>
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                      <span class="fw-bold font-serif text-primary" id="mapBoutiqueName">Paris Flagship Salon</span>
+                      <span class="badge border border-theme bg-surface-soft text-gold" style="font-size: 0.7rem;"
+                        id="mapBoutiqueBadge">Coordinates: 48.8698° N, 2.3204° E</span>
+                    </div>
+                    <div class="small text-secondary mb-1" id="mapBoutiqueAddress">
+                      <i class="bi bi-pin-map text-gold me-1"></i>18 Rue du Faubourg Saint-Honoré, 75008 Paris, France
+                    </div>
+                    <div class="d-flex flex-wrap align-items-center gap-3 small text-muted">
+                      <span id="mapBoutiqueHours"><i class="bi bi-clock text-gold me-1"></i>Mon – Sat: 10:00 –
+                        19:00</span>
+                      <span id="mapBoutiquePhone"><i class="bi bi-telephone text-gold me-1"></i>+33 (0)1 42 68 55
+                        00</span>
+                    </div>
+                  </div>
+                  <div>
+                    <a id="mapDirectionsLink"
+                      href="https://maps.google.com/?q=18+Rue+du+Faubourg+Saint-Honor%C3%A9+75008+Paris+France"
+                      target="_blank" rel="noopener noreferrer"
+                      class="btn btn-outline-luxe btn-sm px-3 py-2 text-nowrap">
+                      <i class="bi bi-compass text-gold me-1"></i> Get Directions
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Handbag Shopping FAQ Accordion -->
+            <div class="p-4 border rounded border-theme bg-surface-soft shadow-sm">
+              <h5 class="font-serif fs-4 mb-3">Frequently Asked Questions</h5>
+              <div class="accordion accordion-flush" id="contactFAQAccordion">
+                <div class="accordion-item bg-transparent border-theme">
+                  <h6 class="accordion-header" id="faqHeading1">
+                    <button class="accordion-button collapsed bg-transparent text-body shadow-none px-0 py-3"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1">
+                      Are your bags crafted from 100% genuine Italian leather?
+                    </button>
+                  </h6>
+                  <div id="faqCollapse1" class="accordion-collapse collapse" data-bs-parent="#contactFAQAccordion">
+                    <div class="accordion-body px-0 text-secondary small">
+                      Yes. Every handbag and wallet is produced in Florence using certified traceable full-grain Italian
+                      calfskin tanned with organic vegetable extracts.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item bg-transparent border-theme">
+                  <h6 class="accordion-header" id="faqHeading2">
+                    <button class="accordion-button collapsed bg-transparent text-body shadow-none px-0 py-3"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2">
+                      How long does bespoke monogramming take?
+                    </button>
+                  </h6>
+                  <div id="faqCollapse2" class="accordion-collapse collapse" data-bs-parent="#contactFAQAccordion">
+                    <div class="accordion-body px-0 text-secondary small">
+                      Bespoke gold foil monogramming is completed in our atelier within 24 to 48 hours and does not
+                      delay standard shipping times.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item bg-transparent border-theme">
+                  <h6 class="accordion-header" id="faqHeading3">
+                    <button class="accordion-button collapsed bg-transparent text-body shadow-none px-0 py-3"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3">
+                      What is your international returns policy?
+                    </button>
+                  </h6>
+                  <div id="faqCollapse3" class="accordion-collapse collapse" data-bs-parent="#contactFAQAccordion">
+                    <div class="accordion-body px-0 text-secondary small">
+                      We offer complimentary 30-day worldwide returns. Bags must be unused with protective seal tags
+                      intact in the original silk dustbag and presentation box.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Luxury Footer -->
+  <footer class="footer-luxe">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <!-- Col 1: Brand Story & Socials -->
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="d-inline-block mb-3 text-decoration-none" aria-label="Maison Vélure Paris Home">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="170" height="42" fill="none">
+              <g transform="translate(10, 8)">
+                <circle cx="22" cy="22" r="21" stroke="#fff" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.6" />
+                <circle cx="22" cy="22" r="18" stroke="#fff" stroke-width="1.2" />
+                <path d="M14 15 L22 30 L30 15" stroke="#d4af37" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M18 15 L22 24 L26 15" stroke="#d4af37" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <circle cx="22" cy="12" r="1.5" fill="#d4af37" />
+              </g>
+              <text x="64" y="32" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="600"
+                letter-spacing="4" fill="#fff">VÉLURE</text>
+              <text x="66" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600"
+                letter-spacing="4.5" fill="#d4af37" opacity="0.85">PARIS · ATELIER 1984</text>
+            </svg>
+          </a>
+          <p class="small text-secondary mb-4" style="line-height: 1.7; max-width: 340px;">
+            Maison Vélure is an internationally celebrated French artisanal leathercraft atelier dedicated to creating
+            traceable, handcrafted luxury handbags, totes, and evening purses with lifetime durability.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://facebook.com" class="footer-social-btn" aria-label="Facebook" target="_blank"
+              rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com" class="footer-social-btn" aria-label="X (Twitter)" target="_blank"
+              rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://linkedin.com" class="footer-social-btn" aria-label="LinkedIn" target="_blank"
+              rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+            <a href="https://instagram.com" class="footer-social-btn" aria-label="Instagram" target="_blank"
+              rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtube.com" class="footer-social-btn" aria-label="YouTube" target="_blank"
+              rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links (Matches Reference Col 2) -->
+        <div class="col-6 col-lg-2 col-md-3">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Company</a></li>
+            <li><a href="shop.html">Atelier Collections</a></li>
+            <li><a href="pricing.html">Pricing & VIP Care</a></li>
+            <li><a href="blog.html">Artisanal Blog</a></li>
+            <li><a href="gifting.html">Gifting Suite</a></li>
+            <li><a href="contact.html">Contact Headquarters</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services (Matches Reference Col 3) -->
+        <div class="col-6 col-lg-3 col-md-3">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html?inquiry=restoration" class="text-gold fw-semibold">Handbag Restoration & Spa</a>
+            </li>
+            <li><a href="contact.html?inquiry=monogram">Bespoke Monogramming</a></li>
+            <li><a href="about.html">Traceable Italian Leather</a></li>
+            <li><a href="contact.html?inquiry=appointment">Private Salon Appointments</a></li>
+            <li><a href="gifting.html">VIP Complimentary Packaging</a></li>
+            <li><a href="pricing.html">Lifetime Hardware Warranty</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Atelier & Concierge Info (Matches Reference Col 4) -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Atelier & Concierge Info</h5>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item d-flex align-items-start gap-2 mb-3">
+              <i class="bi bi-geo-alt text-gold mt-1"></i>
+              <span class="small">18 Rue du Faubourg Saint-Honoré, 75008 Paris, France</span>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-telephone text-gold"></i>
+              <a href="tel:+33142685500" class="small text-secondary text-decoration-none">+33 (0)1 42 68 55 00</a>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-envelope text-gold"></i>
+              <a href="mailto:concierge@maisonvelure.com"
+                class="small text-secondary text-decoration-none">concierge@maisonvelure.com</a>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-clock text-gold"></i>
+              <span class="small">Monday – Friday: 10:00 AM – 7:00 PM</span>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-0">
+              <i class="bi bi-calendar-check text-gold"></i>
+              <span class="small">Saturday: 11:00 AM – 6:00 PM (VIP By Request)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+        <div>
+          © <span class="current-year">2026</span> Maison Vélure Paris. All rights reserved.
+        </div>
+        <div class="d-flex gap-4 mt-2 mt-md-0">
+          <a href="privacy-policy.html" class="small text-secondary text-decoration-none">Privacy Policy</a>
+          <a href="terms-of-care.html" class="small text-secondary text-decoration-none">Terms of Care</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared Drawers and Modals -->
+  <div class="offcanvas offcanvas-end offcanvas-luxe" tabindex="-1" id="cartOffcanvas">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title font-serif fs-4">Your Shopping Bag</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="shipping-progress-box">
+      <div class="d-flex justify-content-between small mb-1" id="freeShippingText">
+        Add <strong>$150.00</strong> more for Complimentary Express Shipping
+      </div>
+      <div class="progress progress-luxe">
+        <div class="progress-bar" id="freeShippingProgress" style="width: 75%;"></div>
+      </div>
+    </div>
+    <div class="offcanvas-body p-3" id="cartDrawerItems"></div>
+    <div class="cart-drawer-footer">
+      <div class="input-group input-group-sm mb-3">
+        <input type="text" class="form-control form-control-luxe" id="promoCodeInput"
+          placeholder="Promo code (e.g. LUXE20)">
+        <button class="btn btn-outline-luxe" type="button" id="btnApplyPromo">Apply</button>
+      </div>
+      <div class="d-flex justify-content-between small text-muted mb-1">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">$345.00</span>
+      </div>
+      <div class="d-flex justify-content-between small text-muted mb-1">
+        <span>Estimated Delivery</span>
+        <span id="cartShipping">Complimentary</span>
+      </div>
+      <div class="d-flex justify-content-between small text-success mb-2" id="cartDiscountRow" style="display:none;">
+        <span>Promo Discount</span>
+        <span id="cartDiscount">-$0.00</span>
+      </div>
+      <div class="d-flex justify-content-between fw-bold fs-5 pt-2 border-top border-soft mb-3">
+        <span class="font-serif">Total</span>
+        <span id="cartTotal" class="text-gold">$345.00</span>
+      </div>
+      <button type="button" class="btn btn-primary w-100 py-3" id="btnProceedCheckout">
+        <span>Proceed to Checkout</span>
+        <i class="bi bi-lock-fill ms-1"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="modal fade modal-luxe" id="wishlistModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom border-theme">
+          <h5 class="modal-title font-serif fs-4">Your Curated Wishlist</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4" id="wishlistItemsContainer"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-luxe" id="searchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom border-theme">
+          <h5 class="modal-title font-serif fs-4">Search Our Atelier</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="input-group mb-3">
+            <span class="input-group-text bg-transparent border-theme"><i class="bi bi-search text-gold"></i></span>
+            <input type="search" class="form-control form-control-luxe" id="globalSearchInput"
+              placeholder="Search by silhouette, color, leather type..." autocomplete="off">
+          </div>
+          <div id="globalSearchResults">
+            <p class="text-muted small text-center py-3">Type bag silhouette, category, or leather finish...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-luxe" id="checkoutDemoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header border-bottom border-theme">
+          <h5 class="modal-title font-serif fs-4">Maison Vélure Secure Checkout (Demo)</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="alert alert-info d-flex align-items-center gap-2 mb-4" role="alert">
+            <i class="bi bi-info-circle-fill fs-5"></i>
+            <div class="small"><strong>Frontend Demonstration:</strong> No real payment or orders are processed.</div>
+          </div>
+          <div id="checkoutDemoSuccess" style="display:none;" class="alert alert-success p-4 text-center">
+            <i class="bi bi-check-circle-fill display-4 text-success d-block mb-3"></i>
+            <h4 class="font-serif">Demonstration Order Simulated!</h4>
+            <p class="small text-muted mb-0">Your test order confirmation #MV-2026-9812 has been simulated. Your
+              shopping bag has been cleared.</p>
+          </div>
+          <form id="checkoutDemoForm" class="row g-3">
+            <div class="col-md-6"><label class="form-label-luxe">First Name</label><input type="text"
+                class="form-control form-control-luxe" required value="Clara"></div>
+            <div class="col-md-6"><label class="form-label-luxe">Last Name</label><input type="text"
+                class="form-control form-control-luxe" required value="Dupont"></div>
+            <div class="col-12"><label class="form-label-luxe">Delivery Address</label><input type="text"
+                class="form-control form-control-luxe" required value="24 Avenue Montaigne"></div>
+            <div class="col-12 pt-3"><button type="submit" class="btn btn-primary w-100 py-3">Simulate Order
+                Placement</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/blog-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

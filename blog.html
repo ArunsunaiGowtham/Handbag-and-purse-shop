@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="The Leather Journal by Maison Vélure Paris — Style guides, handbag care tips, silhouette comparisons, and luxury fashion trends.">
+  <meta name="keywords"
+    content="handbag blog, leather care tips, style guide bags, fashion trends 2026, handbag styling, bag gift ideas">
+  <meta name="author" content="Maison Vélure Paris">
+  <title>The Leather Journal & Style Edit | Maison Vélure Paris</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg">
+
+  <!-- Google Fonts & Bootstrap Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Stylesheet & RTL -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+
+  <!-- Single Luxury Navbar (Unified 1-Bar Navigation, No Top Bar) -->
+  <header class="navbar navbar-expand-lg navbar-luxe sticky-nav">
+    <div class="container d-flex align-items-center justify-content-between">
+      <!-- Mobile Hamburger Button -->
+      <button class="navbar-toggler border-0 p-0 text-body order-1 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVelureMenu" aria-controls="navbarVelureMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+
+      <!-- Brand Logo -->
+      <a class="navbar-brand order-2 order-lg-1 mx-auto mx-lg-0" href="index.html" aria-label="Maison Vélure Paris Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="160" height="40" fill="none">
+          <g transform="translate(10, 8)">
+            <circle cx="22" cy="22" r="21" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.6"/>
+            <circle cx="22" cy="22" r="18" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M14 15 L22 30 L30 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18 15 L22 24 L26 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="22" cy="12" r="1.5" fill="currentColor"/>
+          </g>
+          <text x="64" y="32" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="600" letter-spacing="4" fill="currentColor">VÉLURE</text>
+          <text x="66" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600" letter-spacing="4.5" fill="currentColor" opacity="0.75">PARIS · ATELIER 1984</text>
+        </svg>
+      </a>
+
+      <!-- Primary Navigation Links -->
+      <nav class="collapse navbar-collapse justify-content-center order-4 order-lg-2 w-100 w-lg-auto" id="navbarVelureMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+              Home <i class="bi bi-chevron-down ms-1" style="font-size: 0.65rem;"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-luxe">
+              <li><a class="dropdown-item dropdown-item-luxe " href="index.html">Home 1 — General Store</a></li>
+              <li><a class="dropdown-item dropdown-item-luxe " href="index-2.html">Home 2 — Fashion & Collection</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link " href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link " href="gifting.html">Gifting Suite</a></li>
+          <li class="nav-item"><a class="nav-link " href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link " href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link " href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Icons (Theme, RTL, Search, Wishlist, Cart, Account) -->
+      <div class="d-flex align-items-center gap-2 order-3">
+        <!-- Theme Toggle -->
+        <button class="btn-icon theme-toggle-btn" type="button" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <!-- RTL Toggle -->
+        <button class="btn-icon rtl-toggle-btn" type="button" title="Toggle RTL Direction" aria-label="Toggle RTL" style="font-size: 0.72rem; font-weight: 700;">
+          RTL
+        </button>
+        <!-- Wishlist Trigger -->
+        <a href="shop.html" class="btn-icon" title="Wishlist — View Shop" aria-label="View Shop">
+          <i class="bi bi-heart"></i>
+          <span class="badge-count wishlist-badge-count" style="display:none;">0</span>
+        </a>
+        <!-- Cart Trigger -->
+        <button class="btn-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" title="Shopping Bag" aria-label="View Shopping Bag">
+          <i class="bi bi-bag"></i>
+          <span class="badge-count cart-badge-count">1</span>
+        </button>
+        </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Blog Hero Section with Unique Background Image -->
+    <section class="page-header-banner page-header-blog" style="background-image: url('assets/images/blog/blog-1.jpg');">
+      <div class="container text-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center small mb-2">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Blog</li>
+          </ol>
+        </nav>
+        <h1 class="display-3 font-serif mb-2">Sartorial Stories & Leather Craftsmanship</h1>
+        <p class="lead max-w-700 mx-auto mb-0">
+          Expert styling advice, silhouette deep-dives, leather care preservation guides, and runway color forecasts curated by our editors.
+        </p>
+      </div>
+    </section>
+
+    <!-- Blog Search Bar & Category Filter Pills (After Background Image) -->
+    <section class="py-4 bg-surface-soft border-bottom border-theme">
+      <div class="container text-center">
+        <!-- Blog Search Bar -->
+        <div class="max-w-600 mx-auto mb-3">
+          <div class="input-group">
+            <span class="input-group-text bg-surface border-theme"><i class="bi bi-search text-gold"></i></span>
+            <input type="text" class="form-control form-control-luxe" id="blogSearchInput"
+              placeholder="Search styling tips, bag care guides, color trends...">
+          </div>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="d-flex flex-wrap justify-content-center gap-2" id="blogCategoryPills">
+          <button type="button" class="btn btn-sm btn-outline-luxe active blog-filter-pill" data-category="all">All
+            Articles</button>
+          <button type="button" class="btn btn-sm btn-outline-luxe blog-filter-pill"
+            data-category="Fashion Trends">Fashion Trends</button>
+          <button type="button" class="btn btn-sm btn-outline-luxe blog-filter-pill"
+            data-category="Handbag Styling">Handbag Styling</button>
+          <button type="button" class="btn btn-sm btn-outline-luxe blog-filter-pill"
+            data-category="Shopping Guides">Shopping Guides</button>
+          <button type="button" class="btn btn-sm btn-outline-luxe blog-filter-pill" data-category="Bag Care Tips">Bag
+            Care Tips</button>
+          <button type="button" class="btn btn-sm btn-outline-luxe blog-filter-pill" data-category="Gift Ideas">Gift
+            Ideas</button>
+          <button type="button" class="btn btn-sm btn-outline-luxe blog-filter-pill" data-category="New Collections">New
+            Collections</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Articles Grid Section -->
+    <section class="py-5 bg-surface">
+      <div class="container">
+        <!-- Results count display -->
+        <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom border-theme">
+          <div class="small text-secondary">
+            Showing <strong id="blogCountDisplay" class="text-body">18</strong> Articles
+          </div>
+          <button type="button" class="btn btn-link btn-sm text-gold p-0 text-decoration-none"
+            id="btnResetBlogFilter">Reset Filters</button>
+        </div>
+
+        <!-- Strict Grid for Blog Cards -->
+        <div class="row g-4" id="blogCardsGrid">
+          <!-- Dynamically populated with strict alignment rules -->
+        </div>
+
+        <!-- Zero Results Fallback -->
+        <div id="noBlogResults" style="display:none;" class="text-center py-5">
+          <i class="bi bi-journal-x text-muted display-4 d-block mb-3"></i>
+          <h4 class="font-serif">No Articles Found</h4>
+          <p class="text-muted small mb-3">No editorial stories match your search keyword or selected category filter.
+          </p>
+          <button type="button" class="btn btn-primary btn-sm" id="btnResetBlogEmpty">Show All Articles</button>
+        </div>
+
+        <!-- Pagination / Load More -->
+        <div class="text-center mt-5 pt-3 border-top border-theme">
+          <nav aria-label="Blog pagination">
+            <ul class="pagination justify-content-center mb-0">
+              <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">Previous</a></li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Luxury Footer -->
+  <footer class="footer-luxe">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <!-- Col 1: Brand Story & Socials -->
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="d-inline-block mb-3 text-decoration-none" aria-label="Maison Vélure Paris Home">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="170" height="42" fill="none">
+              <g transform="translate(10, 8)">
+                <circle cx="22" cy="22" r="21" stroke="#fff" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.6"/>
+                <circle cx="22" cy="22" r="18" stroke="#fff" stroke-width="1.2"/>
+                <path d="M14 15 L22 30 L30 15" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 15 L22 24 L26 15" stroke="#d4af37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="22" cy="12" r="1.5" fill="#d4af37"/>
+              </g>
+              <text x="64" y="32" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="600" letter-spacing="4" fill="#fff">VÉLURE</text>
+              <text x="66" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600" letter-spacing="4.5" fill="#d4af37" opacity="0.85">PARIS · ATELIER 1984</text>
+            </svg>
+          </a>
+          <p class="small text-secondary mb-4" style="line-height: 1.7; max-width: 340px;">
+            Maison Vélure is an internationally celebrated French artisanal leathercraft atelier dedicated to creating traceable, handcrafted luxury handbags, totes, and evening purses with lifetime durability.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://facebook.com" class="footer-social-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com" class="footer-social-btn" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://linkedin.com" class="footer-social-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+            <a href="https://instagram.com" class="footer-social-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtube.com" class="footer-social-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links (Matches Reference Col 2) -->
+        <div class="col-6 col-lg-2 col-md-3">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Company</a></li>
+            <li><a href="shop.html">Atelier Collections</a></li>
+            <li><a href="pricing.html">Pricing & VIP Care</a></li>
+            <li><a href="blog.html">Artisanal Blog</a></li>
+            <li><a href="gifting.html">Gifting Suite</a></li>
+            <li><a href="contact.html">Contact Headquarters</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services (Matches Reference Col 3) -->
+        <div class="col-6 col-lg-3 col-md-3">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html?inquiry=restoration" class="text-gold fw-semibold">Handbag Restoration & Spa</a></li>
+            <li><a href="contact.html?inquiry=monogram">Bespoke Monogramming</a></li>
+            <li><a href="about.html">Traceable Italian Leather</a></li>
+            <li><a href="contact.html?inquiry=appointment">Private Salon Appointments</a></li>
+            <li><a href="gifting.html">VIP Complimentary Packaging</a></li>
+            <li><a href="pricing.html">Lifetime Hardware Warranty</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Atelier & Concierge Info (Matches Reference Col 4) -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Atelier & Concierge Info</h5>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item d-flex align-items-start gap-2 mb-3">
+              <i class="bi bi-geo-alt text-gold mt-1"></i>
+              <span class="small">18 Rue du Faubourg Saint-Honoré, 75008 Paris, France</span>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-telephone text-gold"></i>
+              <a href="tel:+33142685500" class="small text-secondary text-decoration-none">+33 (0)1 42 68 55 00</a>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-envelope text-gold"></i>
+              <a href="mailto:concierge@maisonvelure.com" class="small text-secondary text-decoration-none">concierge@maisonvelure.com</a>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-clock text-gold"></i>
+              <span class="small">Monday – Friday: 10:00 AM – 7:00 PM</span>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-0">
+              <i class="bi bi-calendar-check text-gold"></i>
+              <span class="small">Saturday: 11:00 AM – 6:00 PM (VIP By Request)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+        <div>
+          © <span class="current-year">2026</span> Maison Vélure Paris. All rights reserved.
+        </div>
+        <div class="d-flex gap-4 mt-2 mt-md-0">
+          <a href="privacy-policy.html" class="small text-secondary text-decoration-none">Privacy Policy</a>
+          <a href="terms-of-care.html" class="small text-secondary text-decoration-none">Terms of Care</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared Drawers and Modals -->
+  <div class="offcanvas offcanvas-end offcanvas-luxe" tabindex="-1" id="cartOffcanvas">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title font-serif fs-4">Your Shopping Bag</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="shipping-progress-box">
+      <div class="d-flex justify-content-between small mb-1" id="freeShippingText">
+        Add <strong>$150.00</strong> more for Complimentary Express Shipping
+      </div>
+      <div class="progress progress-luxe">
+        <div class="progress-bar" id="freeShippingProgress" style="width: 75%;"></div>
+      </div>
+    </div>
+    <div class="offcanvas-body p-3" id="cartDrawerItems"></div>
+    <div class="cart-drawer-footer">
+      <div class="input-group input-group-sm mb-3">
+        <input type="text" class="form-control form-control-luxe" id="promoCodeInput"
+          placeholder="Promo code (e.g. LUXE20)">
+        <button class="btn btn-outline-luxe" type="button" id="btnApplyPromo">Apply</button>
+      </div>
+      <div class="d-flex justify-content-between small text-muted mb-1">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">$345.00</span>
+      </div>
+      <div class="d-flex justify-content-between small text-muted mb-1">
+        <span>Estimated Delivery</span>
+        <span id="cartShipping">Complimentary</span>
+      </div>
+      <div class="d-flex justify-content-between small text-success mb-2" id="cartDiscountRow" style="display:none;">
+        <span>Promo Discount</span>
+        <span id="cartDiscount">-$0.00</span>
+      </div>
+      <div class="d-flex justify-content-between fw-bold fs-5 pt-2 border-top border-soft mb-3">
+        <span class="font-serif">Total</span>
+        <span id="cartTotal" class="text-gold">$345.00</span>
+      </div>
+      <button type="button" class="btn btn-primary w-100 py-3" id="btnProceedCheckout">
+        <span>Proceed to Checkout</span>
+        <i class="bi bi-lock-fill ms-1"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="modal fade modal-luxe" id="wishlistModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom border-theme">
+          <h5 class="modal-title font-serif fs-4">Your Curated Wishlist</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4" id="wishlistItemsContainer"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-luxe" id="searchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom border-theme">
+          <h5 class="modal-title font-serif fs-4">Search Our Atelier</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="input-group mb-3">
+            <span class="input-group-text bg-transparent border-theme"><i class="bi bi-search text-gold"></i></span>
+            <input type="search" class="form-control form-control-luxe" id="globalSearchInput"
+              placeholder="Search by silhouette, color, leather type..." autocomplete="off">
+          </div>
+          <div id="globalSearchResults">
+            <p class="text-muted small text-center py-3">Type bag silhouette, category, or leather finish...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-luxe" id="checkoutDemoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header border-bottom border-theme">
+          <h5 class="modal-title font-serif fs-4">Maison Vélure Secure Checkout (Demo)</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="alert alert-info d-flex align-items-center gap-2 mb-4" role="alert">
+            <i class="bi bi-info-circle-fill fs-5"></i>
+            <div class="small"><strong>Frontend Demonstration:</strong> No real payment or orders are processed.</div>
+          </div>
+          <div id="checkoutDemoSuccess" style="display:none;" class="alert alert-success p-4 text-center">
+            <i class="bi bi-check-circle-fill display-4 text-success d-block mb-3"></i>
+            <h4 class="font-serif">Demonstration Order Simulated!</h4>
+            <p class="small text-muted mb-0">Your test order confirmation #MV-2026-9812 has been simulated. Your
+              shopping bag has been cleared.</p>
+          </div>
+          <form id="checkoutDemoForm" class="row g-3">
+            <div class="col-md-6"><label class="form-label-luxe">First Name</label><input type="text"
+                class="form-control form-control-luxe" required value="Clara"></div>
+            <div class="col-md-6"><label class="form-label-luxe">Last Name</label><input type="text"
+                class="form-control form-control-luxe" required value="Dupont"></div>
+            <div class="col-12"><label class="form-label-luxe">Delivery Address</label><input type="text"
+                class="form-control form-control-luxe" required value="24 Avenue Montaigne"></div>
+            <div class="col-12 pt-3"><button type="submit" class="btn btn-primary w-100 py-3">Simulate Order
+                Placement</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/blog-data.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Interactive Blog Filter & Alignment Controller -->
+  <script>
+    (function () {
+      const grid = document.getElementById('blogCardsGrid');
+      const countDisplay = document.getElementById('blogCountDisplay');
+      const noResults = document.getElementById('noBlogResults');
+      const searchInput = document.getElementById('blogSearchInput');
+      const btnResetFilter = document.getElementById('btnResetBlogFilter');
+      const btnResetEmpty = document.getElementById('btnResetBlogEmpty');
+
+      let currentCategory = 'all';
+      let currentSearch = '';
+
+      function renderArticles() {
+        if (!window.BLOG_POSTS) return;
+
+        let filtered = window.BLOG_POSTS.filter(post => {
+          if (currentCategory !== 'all' && post.category !== currentCategory) return false;
+          if (currentSearch) {
+            const q = currentSearch.toLowerCase();
+            const matches = post.title.toLowerCase().includes(q) ||
+              post.summary.toLowerCase().includes(q) ||
+              post.category.toLowerCase().includes(q) ||
+              (post.tags && post.tags.some(t => t.toLowerCase().includes(q)));
+            if (!matches) return false;
+          }
+          return true;
+        });
+
+        if (filtered.length === 0) {
+          grid.innerHTML = '';
+          noResults.style.display = 'block';
+          countDisplay.textContent = '0';
+          return;
+        }
+
+        noResults.style.display = 'none';
+        countDisplay.textContent = filtered.length;
+
+        grid.innerHTML = filtered.map(post => `
+          <div class="col-md-6 col-lg-4">
+            <article class="blog-card">
+              <div class="blog-thumb-wrap">
+                <a href="blog-details.html?id=${post.id}">
+                  <img src="${post.image}" alt="${post.title}" loading="lazy">
+                </a>
+              </div>
+              <div class="blog-card-body">
+                <div class="blog-meta-top">
+                  <span class="blog-category-badge">${post.category}</span>
+                  <span><i class="bi bi-clock me-1"></i>${post.readTime}</span>
+                </div>
+                <h3 class="blog-card-title">
+                  <a href="blog-details.html?id=${post.id}">${post.title}</a>
+                </h3>
+                <p class="blog-card-excerpt">
+                  ${post.summary}
+                </p>
+                <div class="blog-card-footer">
+                  <div class="blog-author-info">
+                    <img src="${post.authorAvatar}" alt="${post.author}" class="blog-author-avatar">
+                    <div>
+                      <div class="blog-author-name">${post.author}</div>
+                      <div class="blog-author-date">${post.date}</div>
+                    </div>
+                  </div>
+                  <a href="blog-details.html?id=${post.id}" class="blog-read-link" aria-label="Read full article: ${post.title}">
+                    <span>Read</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        `).join('');
+      }
+
+      // Category Pill Click
+      document.querySelectorAll('.blog-filter-pill').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          document.querySelectorAll('.blog-filter-pill').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentCategory = btn.getAttribute('data-category');
+          renderArticles();
+        });
+      });
+
+      // Search Input
+      searchInput.addEventListener('input', (e) => {
+        currentSearch = e.target.value.trim();
+        renderArticles();
+      });
+
+      function resetFilter() {
+        currentCategory = 'all';
+        currentSearch = '';
+        searchInput.value = '';
+        document.querySelectorAll('.blog-filter-pill').forEach(b => b.classList.remove('active'));
+        const allBtn = document.querySelector('.blog-filter-pill[data-category="all"]');
+        if (allBtn) allBtn.classList.add('active');
+        renderArticles();
+      }
+
+      btnResetFilter.addEventListener('click', resetFilter);
+      btnResetEmpty.addEventListener('click', resetFilter);
+
+      // Read initial category from URL parameter if provided
+      const urlParams = new URLSearchParams(window.location.search);
+      const initialCat = urlParams.get('category');
+      if (initialCat) {
+        const matchingBtn = Array.from(document.querySelectorAll('.blog-filter-pill'))
+          .find(b => b.getAttribute('data-category').toLowerCase() === initialCat.toLowerCase());
+        if (matchingBtn) {
+          document.querySelectorAll('.blog-filter-pill').forEach(b => b.classList.remove('active'));
+          matchingBtn.classList.add('active');
+          currentCategory = matchingBtn.getAttribute('data-category');
+        }
+      }
+
+      // Initial Render
+      renderArticles();
+    })();
+  </script>
+</body>
+
+</html>

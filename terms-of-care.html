@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Maison Vélure Paris Terms of Care & Artisan Warranty — Preserving the structure, patina, and lifetime longevity of our Tuscan leather handbags.">
+  <meta name="keywords"
+    content="terms of care, handbag care warranty, leather maintenance, artisan lifetime guarantee, bag preservation">
+  <meta name="author" content="Maison Vélure Paris">
+  <title>Terms of Care & Warranty | Maison Vélure Paris</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg">
+
+  <!-- Google Fonts & Bootstrap Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Stylesheet & RTL -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+
+  <!-- Single Luxury Navbar (Unified 1-Bar Navigation, No Top Bar) -->
+  <header class="navbar navbar-expand-lg navbar-luxe sticky-nav">
+    <div class="container d-flex align-items-center justify-content-between">
+      <!-- Mobile Hamburger Button -->
+      <button class="navbar-toggler border-0 p-0 text-body order-1 d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarVelureMenu" aria-controls="navbarVelureMenu" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+
+      <!-- Brand Logo -->
+      <a class="navbar-brand order-2 order-lg-1 mx-auto mx-lg-0" href="index.html" aria-label="Maison Vélure Paris Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="160" height="40" fill="none">
+          <g transform="translate(10, 8)">
+            <circle cx="22" cy="22" r="21" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.6"/>
+            <circle cx="22" cy="22" r="18" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M14 15 L22 30 L30 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18 15 L22 24 L26 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="22" cy="12" r="1.5" fill="currentColor"/>
+          </g>
+          <text x="64" y="32" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="600" letter-spacing="4" fill="currentColor">VÉLURE</text>
+          <text x="66" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600" letter-spacing="4.5" fill="currentColor" opacity="0.75">PARIS • ATELIER 1984</text>
+        </svg>
+      </a>
+
+      <!-- Primary Navigation Links -->
+      <nav class="collapse navbar-collapse justify-content-center order-4 order-lg-2 w-100 w-lg-auto" id="navbarVelureMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static"
+              aria-expanded="false">
+              Home <i class="bi bi-chevron-down ms-1" style="font-size: 0.65rem;"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-luxe">
+              <li><a class="dropdown-item dropdown-item-luxe" href="index.html">Home 1 – General Store</a></li>
+              <li><a class="dropdown-item dropdown-item-luxe" href="index-2.html">Home 2 – Fashion & Collection</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="gifting.html">Gifting Suite</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Icons (Theme, RTL, Search, Wishlist, Cart) -->
+      <div class="d-flex align-items-center gap-2 order-3">
+        <!-- Theme Toggle -->
+        <button class="btn-icon theme-toggle-btn" type="button" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <!-- RTL Toggle -->
+        <button class="btn-icon rtl-toggle-btn" type="button" title="Toggle RTL Direction" aria-label="Toggle RTL"
+          style="font-size: 0.72rem; font-weight: 700;">
+          RTL
+        </button>
+        <!-- Wishlist Trigger -->
+        <a href="shop.html" class="btn-icon" title="Wishlist – View Shop" aria-label="View Shop">
+          <i class="bi bi-heart"></i>
+          <span class="badge-count wishlist-badge-count" style="display:none;">0</span>
+        </a>
+        <!-- Cart Trigger -->
+        <button class="btn-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas"
+          title="Shopping Bag" aria-label="View Shopping Bag">
+          <i class="bi bi-bag"></i>
+          <span class="badge-count cart-badge-count">1</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header Banner with Unique Background Image and Centered Breadcrumb -->
+    <section class="page-header-banner page-header-terms" style="background-image: url('assets/images/banners/banner-summer.jpg');">
+      <div class="container text-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center small mb-2">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Terms of Care</li>
+          </ol>
+        </nav>
+        <h1 class="display-3 font-serif mb-2">Terms of Care & Artisan Warranty</h1>
+        <p class="lead max-w-700 mx-auto mb-0">
+          Preserving the structural integrity, hand-stitched seams, and lifetime patina of your handbag.
+        </p>
+      </div>
+    </section>
+
+    <!-- Concise & Well-Aligned Terms of Care Content -->
+    <section class="py-5 bg-surface">
+      <div class="container py-3" style="max-width: 920px;">
+        <!-- Header summary pill -->
+        <div class="text-center mb-5">
+          <span class="subheading d-inline-block mb-2">Generational Craftsmanship Covenant</span>
+          <h2 class="display-5 font-serif mb-2">Care & Lifetime Longevity</h2>
+          <p class="text-secondary small mb-0">Certified Florence Atelier Standard • 100% Full-Grain Tuscan Leather Guidelines</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- 1. Lifetime Artisan Warranty -->
+          <div class="col-md-6">
+            <div class="card h-100 border-theme bg-surface-soft p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 44px; height: 44px; background: rgba(200, 160, 89, 0.12);">
+                  <i class="bi bi-award text-gold fs-5"></i>
+                </div>
+                <h3 class="font-serif fs-5 mb-0">1. Lifetime Artisan Guarantee</h3>
+              </div>
+              <p class="small text-secondary mb-0 leading-relaxed">
+                Every Maison Vélure handbag is backed by our lifetime warranty covering structural defects: hand-saddled seams, solid brass buckles, zipper slider mechanisms, and edge burnishing. Authentic repairs are performed exclusively in Florence.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2. Natural Leather Characteristics -->
+          <div class="col-md-6">
+            <div class="card h-100 border-theme bg-surface-soft p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 44px; height: 44px; background: rgba(200, 160, 89, 0.12);">
+                  <i class="bi bi-fingerprint text-gold fs-5"></i>
+                </div>
+                <h3 class="font-serif fs-5 mb-0">2. Natural Full-Grain Hides</h3>
+              </div>
+              <p class="small text-secondary mb-0 leading-relaxed">
+                We select full-grain calfskin tanned with vegetable extracts. Subtle variations in pore density, faint wrinkles, and natural tone shifts are hallmarks of pure uncorrected leather and not defects; they will deepen into a rich, lustrous patina.
+              </p>
+            </div>
+          </div>
+
+          <!-- 3. Daily Storage & Climate Protection -->
+          <div class="col-md-6">
+            <div class="card h-100 border-theme bg-surface-soft p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 44px; height: 44px; background: rgba(200, 160, 89, 0.12);">
+                  <i class="bi bi-box-seam text-gold fs-5"></i>
+                </div>
+                <h3 class="font-serif fs-5 mb-0">3. Archival Storage & Rest</h3>
+              </div>
+              <p class="small text-secondary mb-0 leading-relaxed">
+                When not in use, lightly stuff your bag with acid-free tissue to retain silhouette geometry and place it in the complimentary archival cotton dustbag. Shield from radiators, heaters, and direct sun to prevent moisture depletion.
+              </p>
+            </div>
+          </div>
+
+          <!-- 4. Moisture & Emergency Handling -->
+          <div class="col-md-6">
+            <div class="card h-100 border-theme bg-surface-soft p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 44px; height: 44px; background: rgba(200, 160, 89, 0.12);">
+                  <i class="bi bi-droplet-half text-gold fs-5"></i>
+                </div>
+                <h3 class="font-serif fs-5 mb-0">4. Rain & Liquid Protocol</h3>
+              </div>
+              <p class="small text-secondary mb-0 leading-relaxed">
+                If exposed to unexpected rainfall, immediately blot (do not rub) using a clean, soft microfibre cloth. Allow the leather to dry naturally at room temperature. Never use synthetic detergents, baby wipes, or artificial hot air.
+              </p>
+            </div>
+          </div>
+
+          <!-- 5. Complimentary Annual Spa -->
+          <div class="col-12">
+            <div class="card border-theme bg-surface-soft p-4">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 44px; height: 44px; background: rgba(200, 160, 89, 0.12);">
+                  <i class="bi bi-sparkles text-gold fs-5"></i>
+                </div>
+                <h3 class="font-serif fs-5 mb-0">5. Complimentary Annual Atelier Leather Spa</h3>
+              </div>
+              <p class="small text-secondary mb-2 leading-relaxed">
+                All registered clients are entitled to one annual complimentary leather refreshment session. Our master restorers provide:
+              </p>
+              <ul class="list-unstyled small text-secondary mb-0 d-flex flex-wrap gap-3">
+                <li class="d-flex align-items-center"><i class="bi bi-check text-gold me-1 fs-5"></i> Natural beeswax conditioning & steam hydration</li>
+                <li class="d-flex align-items-center"><i class="bi bi-check text-gold me-1 fs-5"></i> Edge-paint sealant inspection & touch-ups</li>
+                <li class="d-flex align-items-center"><i class="bi bi-check text-gold me-1 fs-5"></i> Ultrasonic hardware polishing & clasp re-tensioning</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Concierge Inquiry Assistance Banner -->
+        <div class="card border-theme bg-surface-soft p-4 text-center mt-5">
+          <h4 class="font-serif fs-5 mb-2">Need Leather Spa Care or Restoration?</h4>
+          <p class="small text-secondary mb-3 max-w-700 mx-auto">
+            Our atelier leather technicians are ready to examine your handbag, provide conditioning advice, or schedule an annual spa appointment.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="blog.html?category=Bag%20Care%20Tips" class="btn btn-outline-luxe btn-sm px-4">
+              <i class="bi bi-journal-text me-2"></i>Read Bag Care Guides
+            </a>
+            <a href="contact.html" class="btn btn-primary btn-sm px-4">
+              <i class="bi bi-telephone me-2"></i>Book Concierge Spa
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Unified 4-Column Luxury Footer -->
+  <footer class="footer-luxe">
+    <div class="container">
+      <div class="row g-4 pb-5 border-bottom border-soft">
+        <!-- Col 1: Brand & Craftsmanship Ethos -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-brand mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="150" height="38" fill="none">
+              <g transform="translate(10, 8)">
+                <circle cx="22" cy="22" r="21" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.6"/>
+                <circle cx="22" cy="22" r="18" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M14 15 L22 30 L30 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 15 L22 24 L26 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="22" cy="12" r="1.5" fill="currentColor"/>
+              </g>
+              <text x="64" y="32" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="600" letter-spacing="4" fill="currentColor">VÉLURE</text>
+              <text x="66" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600" letter-spacing="4.5" fill="currentColor" opacity="0.75">PARIS • ATELIER 1984</text>
+            </svg>
+          </div>
+          <p class="small text-secondary mb-3">
+            Pure Tuscan craftsmanship, ethically sourced full-grain leathers, and generational artisanal mastery.
+          </p>
+          <div class="d-flex gap-3 social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon"
+              aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="social-icon"
+              aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon"
+              aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-icon"
+              aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links (Matches Reference Col 2) -->
+        <div class="col-6 col-lg-2 col-md-3">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Company</a></li>
+            <li><a href="shop.html">Atelier Collections</a></li>
+            <li><a href="pricing.html">Pricing & VIP Care</a></li>
+            <li><a href="blog.html">Artisanal Blog</a></li>
+            <li><a href="gifting.html">Gifting Suite</a></li>
+            <li><a href="contact.html">Contact Headquarters</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services (Matches Reference Col 3) -->
+        <div class="col-6 col-lg-3 col-md-3">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html?inquiry=restoration" class="text-gold fw-semibold">Handbag Restoration & Spa</a></li>
+            <li><a href="contact.html?inquiry=monogram">Bespoke Monogramming</a></li>
+            <li><a href="about.html">Traceable Italian Leather</a></li>
+            <li><a href="contact.html?inquiry=appointment">Private Salon Appointments</a></li>
+            <li><a href="gifting.html">VIP Complimentary Packaging</a></li>
+            <li><a href="pricing.html">Lifetime Hardware Warranty</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Atelier & Concierge Info -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Atelier & Concierge Info</h5>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item d-flex align-items-start gap-2 mb-3">
+              <i class="bi bi-geo-alt text-gold mt-1"></i>
+              <span class="small">18 Rue du Faubourg Saint-Honoré, 75008 Paris, France</span>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-telephone text-gold"></i>
+              <a href="tel:+33142685500" class="small text-secondary text-decoration-none">+33 (0)1 42 68 55 00</a>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-envelope text-gold"></i>
+              <a href="mailto:concierge@maisonvelure.com" class="small text-secondary text-decoration-none">concierge@maisonvelure.com</a>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-clock text-gold"></i>
+              <span class="small">Monday – Friday: 10:00 AM – 7:00 PM</span>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-0">
+              <i class="bi bi-calendar-check text-gold"></i>
+              <span class="small">Saturday: 11:00 AM – 6:00 PM (VIP By Request)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+        <div>
+          © <span class="current-year">2026</span> Maison Vélure Paris. All rights reserved.
+        </div>
+        <div class="d-flex gap-4 mt-2 mt-md-0">
+          <a href="privacy-policy.html" class="small text-secondary text-decoration-none">Privacy Policy</a>
+          <a href="terms-of-care.html" class="small text-gold text-decoration-none">Terms of Care</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared Drawers and Modals -->
+  <div class="offcanvas offcanvas-end offcanvas-luxe" tabindex="-1" id="cartOffcanvas">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title font-serif fs-4">Your Shopping Bag</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="shipping-progress-box">
+      <div class="d-flex justify-content-between small mb-1" id="freeShippingText">
+        Add <strong>$150.00</strong> more for Complimentary Express Shipping
+      </div>
+      <div class="progress progress-luxe">
+        <div class="progress-bar" id="freeShippingProgress" style="width: 75%;"></div>
+      </div>
+    </div>
+    <div class="offcanvas-body p-3" id="cartDrawerItems"></div>
+    <div class="cart-drawer-footer">
+      <div class="input-group input-group-sm mb-3">
+        <input type="text" class="form-control form-control-luxe" id="promoCodeInput"
+          placeholder="Promo code (e.g. LUXE20)">
+        <button class="btn btn-outline-luxe" type="button" id="btnApplyPromo">Apply</button>
+      </div>
+      <div class="d-flex justify-content-between small text-muted mb-1">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">$345.00</span>
+      </div>
+      <div class="d-flex justify-content-between small text-muted mb-1">
+        <span>Estimated Delivery</span>
+        <span id="cartShipping">Complimentary</span>
+      </div>
+      <div class="d-flex justify-content-between small text-success mb-2" id="cartDiscountRow" style="display:none;">
+        <span>Promo Discount</span>
+        <span id="cartDiscount">-$0.00</span>
+      </div>
+      <div class="d-flex justify-content-between fw-bold fs-5 pt-2 border-top border-soft mb-3">
+        <span class="font-serif">Total</span>
+        <span id="cartTotal" class="text-gold">$345.00</span>
+      </div>
+      <button type="button" class="btn btn-primary w-100 py-3" id="btnProceedCheckout">
+        <span>Proceed to Checkout</span>
+        <i class="bi bi-lock-fill ms-1"></i>
+      </button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/blog-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

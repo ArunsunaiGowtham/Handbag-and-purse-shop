@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maison Vélure Paris — Handcrafted luxury leather handbags, totes, clutches, backpacks, and designer purses made with full-grain Italian calfskin.">
+  <meta name="keywords" content="handbags, luxury purses, leather totes, designer clutches, crossbody bags, italian leather, fashion accessories">
+  <meta name="author" content="Maison Vélure Paris">
+  <title>Maison Vélure Paris | Handcrafted Luxury Handbags & Purses</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg">
+
+  <!-- Google Fonts & Bootstrap Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Stylesheet & RTL -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- Single Luxury Navbar (Unified 1-Bar Navigation, No Top Bar) -->
+  <header class="navbar navbar-expand-lg navbar-luxe sticky-nav">
+    <div class="container d-flex align-items-center justify-content-between">
+      <!-- Mobile Hamburger Button -->
+      <button class="navbar-toggler border-0 p-0 text-body order-1 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVelureMenu" aria-controls="navbarVelureMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+
+      <!-- Brand Logo -->
+      <a class="navbar-brand order-2 order-lg-1 mx-auto mx-lg-0" href="index.html" aria-label="Maison Vélure Paris Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="160" height="40" fill="none">
+          <g transform="translate(10, 8)">
+            <circle cx="22" cy="22" r="21" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.6"/>
+            <circle cx="22" cy="22" r="18" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M14 15 L22 30 L30 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18 15 L22 24 L26 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="22" cy="12" r="1.5" fill="currentColor"/>
+          </g>
+          <text x="64" y="32" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="600" letter-spacing="4" fill="currentColor">VÉLURE</text>
+          <text x="66" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600" letter-spacing="4.5" fill="currentColor" opacity="0.75">PARIS · ATELIER 1984</text>
+        </svg>
+      </a>
+
+      <!-- Primary Navigation Links -->
+      <nav class="collapse navbar-collapse justify-content-center order-4 order-lg-2 w-100 w-lg-auto" id="navbarVelureMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center">
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+              Home <i class="bi bi-chevron-down ms-1" style="font-size: 0.65rem;"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-luxe">
+              <li><a class="dropdown-item dropdown-item-luxe active" href="index.html">Home 1 — General Store</a></li>
+              <li><a class="dropdown-item dropdown-item-luxe " href="index-2.html">Home 2 — Fashion & Collection</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link " href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link " href="gifting.html">Gifting Suite</a></li>
+          <li class="nav-item"><a class="nav-link " href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link " href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link " href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link " href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Icons (Theme, RTL, Search, Wishlist, Cart, Account) -->
+      <div class="d-flex align-items-center gap-2 order-3">
+        <!-- Theme Toggle -->
+        <button class="btn-icon theme-toggle-btn" type="button" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <!-- RTL Toggle -->
+        <button class="btn-icon rtl-toggle-btn" type="button" title="Toggle RTL Direction" aria-label="Toggle RTL" style="font-size: 0.72rem; font-weight: 700;">
+          RTL
+        </button>
+        <!-- Wishlist Trigger -->
+        <a href="shop.html" class="btn-icon" title="Wishlist — View Shop" aria-label="View Shop">
+          <i class="bi bi-heart"></i>
+          <span class="badge-count wishlist-badge-count" style="display:none;">0</span>
+        </a>
+        <!-- Cart Trigger -->
+        <button class="btn-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" title="Shopping Bag" aria-label="View Shopping Bag">
+          <i class="bi bi-bag"></i>
+          <span class="badge-count cart-badge-count">1</span>
+        </button>
+        </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Banner Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="subheading"><i class="bi bi-stars me-1"></i> Spring / Summer 2026 Collection</span>
+            <h1 class="display-3 mb-4">Sculpted Elegance in Full-Grain Italian Leather</h1>
+            <p class="lead mb-4 text-secondary">
+              Discover timeless silhouettes meticulously handcrafted by third-generation Tuscan artisans. From boardroom executive totes to jewel-clasped evening clutches, find your signature companion.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mb-5">
+              <a href="shop.html" class="btn btn-luxe btn-lg">
+                <span>Shop Handbags</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="gifting.html" class="btn btn-outline-luxe btn-lg">
+                <span>Explore Gift Suite</span>
+              </a>
+            </div>
+            <!-- Trust Highlights -->
+            <div class="row g-3 pt-3 border-top border-theme">
+              <div class="col-4">
+                <div class="fw-bold font-serif fs-5">100% Traceable</div>
+                <div class="small text-muted">Tuscan Calfskin</div>
+              </div>
+              <div class="col-4">
+                <div class="fw-bold font-serif fs-5">2-Year</div>
+                <div class="small text-muted">Atelier Warranty</div>
+              </div>
+              <div class="col-4">
+                <div class="fw-bold font-serif fs-5">Complimentary</div>
+                <div class="small text-muted">Bespoke Monogram</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-img-frame">
+              <img src="assets/images/hero/hero-1.jpg" alt="Fashion model holding luxury Maison Vélure leather handbag" loading="eager">
+              <div class="hero-badge-float">
+                <div class="text-gold small text-uppercase fw-bold letter-spacing-1">Iconic Silhouette</div>
+                <div class="font-serif fs-5 text-white">Palermo Executive Work Tote</div>
+                <div class="small text-white-50">Natural vegetable tanning with 24k gold hardware</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Showcase Section -->
+    <section class="py-5 bg-surface">
+      <div class="container py-4">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <span class="subheading">Curated Silhouettes</span>
+          <h2 class="display-5 mb-3">Shop by Category</h2>
+          <p class="text-secondary">Explore our specialized leather collections, tailored for every cadence of modern life.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Totes -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="shop.html?category=totes" class="category-card">
+              <div class="category-img-wrap">
+                <img src="assets/images/products/totes/tote-1.jpg" alt="Totes Category" loading="lazy">
+              </div>
+              <div class="category-info">
+                <h3 class="category-title">Totes & Carryalls</h3>
+                <span class="category-count">4 Styles Available</span>
+              </div>
+            </a>
+          </div>
+          <!-- Clutches -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="shop.html?category=clutches" class="category-card">
+              <div class="category-img-wrap">
+                <img src="assets/images/products/clutches/clutch-1.jpg" alt="Evening Clutches Category" loading="lazy">
+              </div>
+              <div class="category-info">
+                <h3 class="category-title">Evening Clutches</h3>
+                <span class="category-count">4 Styles Available</span>
+              </div>
+            </a>
+          </div>
+          <!-- Backpacks -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="shop.html?category=backpacks" class="category-card">
+              <div class="category-img-wrap">
+                <img src="assets/images/products/backpacks/backpack-1.jpg" alt="Leather Backpacks Category" loading="lazy">
+              </div>
+              <div class="category-info">
+                <h3 class="category-title">Leather Backpacks</h3>
+                <span class="category-count">4 Styles Available</span>
+              </div>
+            </a>
+          </div>
+          <!-- Shoulder Bags -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="shop.html?category=shoulder-bags" class="category-card">
+              <div class="category-img-wrap">
+                <img src="assets/images/products/shoulder-bags/shoulder-1.jpg" alt="Shoulder Bags Category" loading="lazy">
+              </div>
+              <div class="category-info">
+                <h3 class="category-title">Shoulder Bags</h3>
+                <span class="category-count">4 Styles Available</span>
+              </div>
+            </a>
+          </div>
+          <!-- Crossbody Bags -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="shop.html?category=crossbody" class="category-card">
+              <div class="category-img-wrap">
+                <img src="assets/images/products/crossbody/crossbody-1.jpg" alt="Crossbody Bags Category" loading="lazy">
+              </div>
+              <div class="category-info">
+                <h3 class="category-title">Crossbody Bags</h3>
+                <span class="category-count">4 Styles Available</span>
+              </div>
+            </a>
+          </div>
+          <!-- Handbags -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="shop.html?category=handbags" class="category-card">
+              <div class="category-img-wrap">
+                <img src="assets/images/products/handbags/handbag-1.jpg" alt="Handbags & Satchels Category" loading="lazy">
+              </div>
+              <div class="category-info">
+                <h3 class="category-title">Top-Handle Satchels</h3>
+                <span class="category-count">4 Styles Available</span>
+              </div>
+            </a>
+          </div>
+          <!-- Wallets & Purses -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="shop.html?category=wallets" class="category-card">
+              <div class="category-img-wrap">
+                <img src="assets/images/products/wallets/wallet-1.jpg" alt="Wallets and Purses Category" loading="lazy">
+              </div>
+              <div class="category-info">
+                <h3 class="category-title">Wallets & Purses</h3>
+                <span class="category-count">4 Styles Available</span>
+              </div>
+            </a>
+          </div>
+          <!-- Gift Collections -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="gifting.html" class="category-card">
+              <div class="category-img-wrap">
+                <img src="assets/images/gifting/gift-1.jpg" alt="Gift Collections Category" loading="lazy">
+              </div>
+              <div class="category-info">
+                <h3 class="category-title">Gift Collections</h3>
+                <span class="category-count">5 Luxury Bundles</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trending Handbags Section (Home 1 Featured) -->
+    <section class="py-5 bg-surface-soft">
+      <div class="container py-4">
+        <div class="d-flex flex-wrap justify-content-between align-items-end mb-4">
+          <div>
+            <span class="subheading">Current Obsessions</span>
+            <h2 class="display-5 mb-0">Trending Handbags</h2>
+          </div>
+          <a href="shop.html" class="btn btn-outline-luxe mt-3 mt-md-0">
+            <span>View All Handbags</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="row g-4" id="home1TrendingGrid">
+          <!-- Card 1: Tote Palermo -->
+          <div class="col-12 col-sm-6 col-lg-3 d-flex">
+            <div class="product-card-modern">
+              <div class="product-thumb-wrap">
+                <img src="assets/images/products/totes/tote-1.jpg" alt="Palermo Full-Grain Leather Work Tote" loading="lazy">
+                <div class="product-badges">
+                  <span class="badge-luxe badge-bestseller">Bestseller</span>
+                </div>
+                <button type="button" class="btn-wishlist-corner btn-wishlist" data-product-id="tote-palermo" title="Add to Wishlist" aria-label="Add to Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <div class="product-actions-floating">
+                  <button type="button" class="btn-action btn-quickview" data-product-id="tote-palermo" title="Quick View" aria-label="Quick View"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div>
+                  <span class="product-category-pill">Totes & Shoppers</span>
+                </div>
+                <h4 class="product-title"><a href="product-details.html?id=tote-palermo">Palermo Full-Grain Leather Work Tote</a></h4>
+                <div class="product-rating-row">
+                  <span class="rating-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                  <span class="rating-count">(84)</span>
+                </div>
+                <div class="product-price-row">
+                  <span class="product-price-old">$420.00</span>
+                  <span class="product-price-current">$345.00</span>
+                </div>
+                <button type="button" class="btn-add-cart-full btn-add-to-cart" data-product-id="tote-palermo">
+                  <i class="bi bi-cart-plus-fill"></i>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Clutch Vendome -->
+          <div class="col-12 col-sm-6 col-lg-3 d-flex">
+            <div class="product-card-modern">
+              <div class="product-thumb-wrap">
+                <img src="assets/images/products/clutches/clutch-1.jpg" alt="Vendome Velvet Gold-Clasp Evening Clutch" loading="lazy">
+                <div class="product-badges">
+                  <span class="badge-luxe badge-bestseller">Bestseller</span>
+                </div>
+                <button type="button" class="btn-wishlist-corner btn-wishlist" data-product-id="clutch-vendome" title="Add to Wishlist" aria-label="Add to Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <div class="product-actions-floating">
+                  <button type="button" class="btn-action btn-quickview" data-product-id="clutch-vendome" title="Quick View" aria-label="Quick View"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div>
+                  <span class="product-category-pill">Evening Clutches</span>
+                </div>
+                <h4 class="product-title"><a href="product-details.html?id=clutch-vendome">Vendome Velvet Gold-Clasp Clutch</a></h4>
+                <div class="product-rating-row">
+                  <span class="rating-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                  <span class="rating-count">(63)</span>
+                </div>
+                <div class="product-price-row">
+                  <span class="product-price-old">$290.00</span>
+                  <span class="product-price-current">$240.00</span>
+                </div>
+                <button type="button" class="btn-add-cart-full btn-add-to-cart" data-product-id="clutch-vendome">
+                  <i class="bi bi-cart-plus-fill"></i>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Shoulder Saint-Germain -->
+          <div class="col-12 col-sm-6 col-lg-3 d-flex">
+            <div class="product-card-modern">
+              <div class="product-thumb-wrap">
+                <img src="assets/images/products/shoulder-bags/shoulder-1.jpg" alt="Saint-Germain Baguette Shoulder Bag" loading="lazy">
+                <div class="product-badges">
+                  <span class="badge-luxe badge-bestseller">Bestseller</span>
+                </div>
+                <button type="button" class="btn-wishlist-corner btn-wishlist" data-product-id="shoulder-saint-germain" title="Add to Wishlist" aria-label="Add to Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <div class="product-actions-floating">
+                  <button type="button" class="btn-action btn-quickview" data-product-id="shoulder-saint-germain" title="Quick View" aria-label="Quick View"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div>
+                  <span class="product-category-pill">Shoulder Bags</span>
+                </div>
+                <h4 class="product-title"><a href="product-details.html?id=shoulder-saint-germain">Saint-Germain Baguette Shoulder Bag</a></h4>
+                <div class="product-rating-row">
+                  <span class="rating-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                  <span class="rating-count">(112)</span>
+                </div>
+                <div class="product-price-row">
+                  <span class="product-price-old">$340.00</span>
+                  <span class="product-price-current">$290.00</span>
+                </div>
+                <button type="button" class="btn-add-cart-full btn-add-to-cart" data-product-id="shoulder-saint-germain">
+                  <i class="bi bi-cart-plus-fill"></i>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Crossbody Montmartre -->
+          <div class="col-12 col-sm-6 col-lg-3 d-flex">
+            <div class="product-card-modern">
+              <div class="product-thumb-wrap">
+                <img src="assets/images/products/crossbody/crossbody-1.jpg" alt="Montmartre Saddle Leather Crossbody" loading="lazy">
+                <div class="product-badges">
+                  <span class="badge-luxe badge-bestseller">Bestseller</span>
+                </div>
+                <button type="button" class="btn-wishlist-corner btn-wishlist" data-product-id="crossbody-montmartre" title="Add to Wishlist" aria-label="Add to Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <div class="product-actions-floating">
+                  <button type="button" class="btn-action btn-quickview" data-product-id="crossbody-montmartre" title="Quick View" aria-label="Quick View"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div>
+                  <span class="product-category-pill">Crossbody Bags</span>
+                </div>
+                <h4 class="product-title"><a href="product-details.html?id=crossbody-montmartre">Montmartre Saddle Leather Crossbody</a></h4>
+                <div class="product-rating-row">
+                  <span class="rating-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                  <span class="rating-count">(104)</span>
+                </div>
+                <div class="product-price-row">
+                  <span class="product-price-old">$320.00</span>
+                  <span class="product-price-current">$270.00</span>
+                </div>
+                <button type="button" class="btn-add-cart-full btn-add-to-cart" data-product-id="crossbody-montmartre">
+                  <i class="bi bi-cart-plus-fill"></i>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Craftsmanship Feature Story Banner -->
+    <section class="py-5 bg-surface">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="position-relative">
+              <img src="assets/images/about/about-craftsman.jpg" alt="Italian master leather craftsman hand-stitching leather" class="rounded shadow-lg w-100" style="height: 480px; object-fit: cover;">
+              <div class="position-absolute bottom-0 start-0 m-4 p-4 bg-surface rounded shadow-md border border-theme d-none d-sm-block" style="max-width: 280px;">
+                <div class="font-serif fs-4 mb-1">Florence Atelier</div>
+                <div class="small text-muted">Over 40 hours devoted to hand-cutting, edge-painting, and saddle stitching each bespoke creation.</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <span class="subheading">The Art of Leathercraft</span>
+            <h2 class="display-5 mb-4">Born from Tuscan Soil, Crafted for a Lifetime</h2>
+            <p class="text-secondary mb-4">
+              At Maison Vélure, every bag begins in century-old Tuscan tanneries along the Arno River. We reject chrome synthetics in favor of organic vegetable tanning using chestnut and mimosa barks—producing leather that grows richer, softer, and more characterful with every passing year.
+            </p>
+            <ul class="list-unstyled mb-4">
+              <li class="d-flex align-items-center gap-3 mb-3">
+                <i class="bi bi-patch-check-fill text-gold fs-5"></i>
+                <span><strong>Saddle Stitching:</strong> Double-needle linen thread stitches that never unravel, even under heavy tension.</span>
+              </li>
+              <li class="d-flex align-items-center gap-3 mb-3">
+                <i class="bi bi-patch-check-fill text-gold fs-5"></i>
+                <span><strong>Hand-Painted Edge Lacquer:</strong> Seven protective layers cured between hand-sanding rituals.</span>
+              </li>
+              <li class="d-flex align-items-center gap-3">
+                <i class="bi bi-patch-check-fill text-gold fs-5"></i>
+                <span><strong>24K Gold Plated Brass:</strong> Solid forged hardware immune to tarnishing or corrosion.</span>
+              </li>
+            </ul>
+            <a href="about.html" class="btn btn-luxe">
+              <span>Read Our Atelier Story</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best Sellers Showcase (Distinct Selection) -->
+    <section class="py-5 bg-surface-soft">
+      <div class="container py-4">
+        <div class="d-flex flex-wrap justify-content-between align-items-end mb-4">
+          <div>
+            <span class="subheading">Client Favorites</span>
+            <h2 class="display-5 mb-0">Best-Selling Handbags</h2>
+          </div>
+          <a href="shop.html" class="btn btn-outline-luxe mt-3 mt-md-0">
+            <span>Explore All Bags</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="row g-4" id="home1BestSellersGrid">
+          <!-- Card 1: Regency Top-Handle Handbag -->
+          <div class="col-12 col-sm-6 col-lg-3 d-flex">
+            <div class="product-card-modern">
+              <div class="product-thumb-wrap">
+                <img src="assets/images/products/handbags/handbag-1.jpg" alt="Regency Top-Handle Trapezoid Handbag" loading="lazy">
+                <div class="product-badges">
+                  <span class="badge-luxe badge-bestseller">Bestseller</span>
+                </div>
+                <button type="button" class="btn-wishlist-corner btn-wishlist" data-product-id="handbag-regency" title="Add to Wishlist" aria-label="Add to Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <div class="product-actions-floating">
+                  <button type="button" class="btn-action btn-quickview" data-product-id="handbag-regency" title="Quick View" aria-label="Quick View"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div>
+                  <span class="product-category-pill">Handbags & Satchels</span>
+                </div>
+                <h4 class="product-title"><a href="product-details.html?id=handbag-regency">Regency Top-Handle Trapezoid Handbag</a></h4>
+                <div class="product-rating-row">
+                  <span class="rating-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                  <span class="rating-count">(89)</span>
+                </div>
+                <div class="product-price-row">
+                  <span class="product-price-old">$520.00</span>
+                  <span class="product-price-current">$450.00</span>
+                </div>
+                <button type="button" class="btn-add-cart-full btn-add-to-cart" data-product-id="handbag-regency">
+                  <i class="bi bi-cart-plus-fill"></i>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Milanese Commuter Backpack -->
+          <div class="col-12 col-sm-6 col-lg-3 d-flex">
+            <div class="product-card-modern">
+              <div class="product-thumb-wrap">
+                <img src="assets/images/products/backpacks/backpack-1.jpg" alt="Milanese Commuter Leather Backpack" loading="lazy">
+                <div class="product-badges">
+                  <span class="badge-luxe badge-bestseller">Bestseller</span>
+                </div>
+                <button type="button" class="btn-wishlist-corner btn-wishlist" data-product-id="backpack-milanese" title="Add to Wishlist" aria-label="Add to Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <div class="product-actions-floating">
+                  <button type="button" class="btn-action btn-quickview" data-product-id="backpack-milanese" title="Quick View" aria-label="Quick View"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div>
+                  <span class="product-category-pill">Backpacks</span>
+                </div>
+                <h4 class="product-title"><a href="product-details.html?id=backpack-milanese">Milanese Commuter Leather Backpack</a></h4>
+                <div class="product-rating-row">
+                  <span class="rating-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                  <span class="rating-count">(97)</span>
+                </div>
+                <div class="product-price-row">
+                  <span class="product-price-old">$430.00</span>
+                  <span class="product-price-current">$360.00</span>
+                </div>
+                <button type="button" class="btn-add-cart-full btn-add-to-cart" data-product-id="backpack-milanese">
+                  <i class="bi bi-cart-plus-fill"></i>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Riviera Quilted Chain Flap -->
+          <div class="col-12 col-sm-6 col-lg-3 d-flex">
+            <div class="product-card-modern">
+              <div class="product-thumb-wrap">
+                <img src="assets/images/products/shoulder-bags/shoulder-2.jpg" alt="Riviera Quilted Chain Shoulder Flap" loading="lazy">
+                <div class="product-badges">
+                  <span class="badge-luxe badge-bestseller">Bestseller</span>
+                </div>
+                <button type="button" class="btn-wishlist-corner btn-wishlist" data-product-id="shoulder-riviera" title="Add to Wishlist" aria-label="Add to Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <div class="product-actions-floating">
+                  <button type="button" class="btn-action btn-quickview" data-product-id="shoulder-riviera" title="Quick View" aria-label="Quick View"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div>
+                  <span class="product-category-pill">Shoulder Bags</span>
+                </div>
+                <h4 class="product-title"><a href="product-details.html?id=shoulder-riviera">Riviera Quilted Chain Shoulder Flap</a></h4>
+                <div class="product-rating-row">
+                  <span class="rating-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                  <span class="rating-count">(78)</span>
+                </div>
+                <div class="product-price-row">
+                  <span class="product-price-old">$450.00</span>
+                  <span class="product-price-current">$380.00</span>
+                </div>
+                <button type="button" class="btn-add-cart-full btn-add-to-cart" data-product-id="shoulder-riviera">
+                  <i class="bi bi-cart-plus-fill"></i>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Saffiano Continental Wallet -->
+          <div class="col-12 col-sm-6 col-lg-3 d-flex">
+            <div class="product-card-modern">
+              <div class="product-thumb-wrap">
+                <img src="assets/images/products/wallets/wallet-1.jpg" alt="Saffiano Continental Zip-Around Wallet" loading="lazy">
+                <div class="product-badges">
+                  <span class="badge-luxe badge-bestseller">Bestseller</span>
+                </div>
+                <button type="button" class="btn-wishlist-corner btn-wishlist" data-product-id="wallet-saffiano-continental" title="Add to Wishlist" aria-label="Add to Wishlist">
+                  <i class="bi bi-heart"></i>
+                </button>
+                <div class="product-actions-floating">
+                  <button type="button" class="btn-action btn-quickview" data-product-id="wallet-saffiano-continental" title="Quick View" aria-label="Quick View"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div>
+                  <span class="product-category-pill">Wallets & Purses</span>
+                </div>
+                <h4 class="product-title"><a href="product-details.html?id=wallet-saffiano-continental">Saffiano Continental Zip Wallet</a></h4>
+                <div class="product-rating-row">
+                  <span class="rating-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                  <span class="rating-count">(138)</span>
+                </div>
+                <div class="product-price-row">
+                  <span class="product-price-old">$165.00</span>
+                  <span class="product-price-current">$135.00</span>
+                </div>
+                <button type="button" class="btn-add-cart-full btn-add-to-cart" data-product-id="wallet-saffiano-continental">
+                  <i class="bi bi-cart-plus-fill"></i>
+                  <span>Add to Cart</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seasonal Promotional Offer Banner -->
+    <section class="py-5 bg-surface text-center">
+      <div class="container py-4">
+        <div class="p-5 rounded bg-surface-soft border border-theme position-relative overflow-hidden">
+          <span class="subheading">Exclusive Offer</span>
+          <h2 class="display-4 mb-3">The Mid-Season Atelier Event</h2>
+          <p class="lead max-w-700 mx-auto text-secondary mb-4">
+            Enjoy up to 25% off select handcrafted totes, satchels, and evening clutches. Includes complimentary custom monogramming and a bespoke silk dustbag.
+          </p>
+          <div class="d-inline-flex align-items-center gap-3 p-2 px-3 border border-dashed rounded bg-surface mb-4">
+            <span class="small text-muted">Use Coupon Code:</span>
+            <strong class="text-gold letter-spacing-1">LUXE20</strong>
+            <button type="button" class="btn btn-sm btn-outline-luxe" onclick="Velure.showToast('Copied code LUXE20 to clipboard!')">Copy</button>
+          </div>
+          <div>
+            <a href="pricing.html" class="btn btn-gold btn-lg">
+              <span>View Offers & Bundles</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="py-5 bg-surface-soft">
+      <div class="container py-4">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <span class="subheading">Verified Connoisseurs</span>
+          <h2 class="display-5 mb-3">Words from Our Patrons</h2>
+          <p class="text-secondary">Read authentic reviews from clients who carry Maison Vélure worldwide.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="p-4 bg-surface rounded border border-theme h-100 d-flex flex-column">
+              <div class="star-rating mb-3">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="font-serif fs-5 mb-4 text-body flex-grow-1">
+                "The Palermo Tote has transformed my daily commute. The leather is fragrant, buttery yet resilient, and the padded laptop sleeve fits my MacBook Pro with room to spare. Unbelievable craftsmanship."
+              </p>
+              <div class="d-flex align-items-center gap-3 pt-3 border-top border-soft">
+                <div class="fw-bold small">Genevieve D.</div>
+                <span class="small text-muted">· Verified Buyer, London</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 bg-surface rounded border border-theme h-100 d-flex flex-column">
+              <div class="star-rating mb-3">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="font-serif fs-5 mb-4 text-body flex-grow-1">
+                "I ordered the Vendome Velvet Clutch for an opera gala in Milan. The gold jewel clasp has such satisfying weight, and I received endless compliments throughout the evening."
+              </p>
+              <div class="d-flex align-items-center gap-3 pt-3 border-top border-soft">
+                <div class="fw-bold small">Sophia M.</div>
+                <span class="small text-muted">· Verified Buyer, Milan</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 bg-surface rounded border border-theme h-100 d-flex flex-column">
+              <div class="star-rating mb-3">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="font-serif fs-5 mb-4 text-body flex-grow-1">
+                "The monogrammed gift presentation blew my wife away on our anniversary. The presentation box, ribbon, and personalized note felt like opening a piece of high Paris haute couture."
+              </p>
+              <div class="d-flex align-items-center gap-3 pt-3 border-top border-soft">
+                <div class="fw-bold small">Julian R.</div>
+                <span class="small text-muted">· Verified Buyer, New York</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter VIP Subscription Section -->
+    <section class="py-5 bg-surface border-top border-theme">
+      <div class="container py-4">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <span class="subheading">Privé Access</span>
+            <h2 class="display-5 mb-3">Join the Maison Vélure Circle</h2>
+            <p class="text-secondary mb-4">
+              Receive private invitations to limited batch drops, leather care masterclasses, and receive a <strong>15% welcome courtesy</strong> toward your inaugural handbag purchase.
+            </p>
+            <form class="newsletter-form d-flex flex-column flex-sm-row gap-2 max-w-600 mx-auto">
+              <input type="email" class="form-control form-control-luxe" placeholder="Enter your email address..." required aria-label="Email address for newsletter">
+              <button type="submit" class="btn btn-luxe flex-shrink-0">
+                <span>Subscribe Privé</span>
+              </button>
+            </form>
+            <div class="small text-muted mt-3">We respect your privacy. Unsubscribe anytime with one click.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Luxury Footer -->
+  <footer class="footer-luxe">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <!-- Col 1: Brand Story & Socials -->
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="d-inline-block mb-3 text-decoration-none" aria-label="Maison Vélure Paris Home">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="170" height="42" fill="none">
+              <g transform="translate(10, 8)">
+                <circle cx="22" cy="22" r="21" stroke="#fff" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.6"/>
+                <circle cx="22" cy="22" r="18" stroke="#fff" stroke-width="1.2"/>
+                <path d="M14 15 L22 30 L30 15" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 15 L22 24 L26 15" stroke="#d4af37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="22" cy="12" r="1.5" fill="#d4af37"/>
+              </g>
+              <text x="64" y="32" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="600" letter-spacing="4" fill="#fff">VÉLURE</text>
+              <text x="66" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600" letter-spacing="4.5" fill="#d4af37" opacity="0.85">PARIS · ATELIER 1984</text>
+            </svg>
+          </a>
+          <p class="small text-secondary mb-4" style="line-height: 1.7; max-width: 340px;">
+            Maison Vélure is an internationally celebrated French artisanal leathercraft atelier dedicated to creating traceable, handcrafted luxury handbags, totes, and evening purses with lifetime durability.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://facebook.com" class="footer-social-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com" class="footer-social-btn" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://linkedin.com" class="footer-social-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+            <a href="https://instagram.com" class="footer-social-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtube.com" class="footer-social-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links (Matches Reference Col 2) -->
+        <div class="col-6 col-lg-2 col-md-3">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Company</a></li>
+            <li><a href="shop.html">Atelier Collections</a></li>
+            <li><a href="pricing.html">Pricing & VIP Care</a></li>
+            <li><a href="blog.html">Artisanal Blog</a></li>
+            <li><a href="gifting.html">Gifting Suite</a></li>
+            <li><a href="contact.html">Contact Headquarters</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services (Matches Reference Col 3) -->
+        <div class="col-6 col-lg-3 col-md-3">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html?inquiry=restoration" class="text-gold fw-semibold">Handbag Restoration & Spa</a></li>
+            <li><a href="contact.html?inquiry=monogram">Bespoke Monogramming</a></li>
+            <li><a href="about.html">Traceable Italian Leather</a></li>
+            <li><a href="contact.html?inquiry=appointment">Private Salon Appointments</a></li>
+            <li><a href="gifting.html">VIP Complimentary Packaging</a></li>
+            <li><a href="pricing.html">Lifetime Hardware Warranty</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Atelier & Concierge Info (Matches Reference Col 4) -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Atelier & Concierge Info</h5>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item d-flex align-items-start gap-2 mb-3">
+              <i class="bi bi-geo-alt text-gold mt-1"></i>
+              <span class="small">18 Rue du Faubourg Saint-Honoré, 75008 Paris, France</span>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-telephone text-gold"></i>
+              <a href="tel:+33142685500" class="small text-secondary text-decoration-none">+33 (0)1 42 68 55 00</a>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-envelope text-gold"></i>
+              <a href="mailto:concierge@maisonvelure.com" class="small text-secondary text-decoration-none">concierge@maisonvelure.com</a>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-clock text-gold"></i>
+              <span class="small">Monday – Friday: 10:00 AM – 7:00 PM</span>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-0">
+              <i class="bi bi-calendar-check text-gold"></i>
+              <span class="small">Saturday: 11:00 AM – 6:00 PM (VIP By Request)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+        <div>
+          © <span class="current-year">2026</span> Maison Vélure Paris. All rights reserved.
+        </div>
+        <div class="d-flex gap-4 mt-2 mt-md-0">
+          <a href="privacy-policy.html" class="small text-secondary text-decoration-none">Privacy Policy</a>
+          <a href="terms-of-care.html" class="small text-secondary text-decoration-none">Terms of Care</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Offcanvas Shopping Bag Drawer -->
+  <div class="offcanvas offcanvas-end offcanvas-luxe" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title font-serif fs-4" id="cartOffcanvasLabel">Your Shopping Bag</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <!-- Free Shipping Progress -->
+    <div class="shipping-progress-box">
+      <div class="d-flex justify-content-between small mb-1" id="freeShippingText">
+        Add <strong>$150.00</strong> more for Complimentary Express Shipping
+      </div>
+      <div class="progress progress-luxe">
+        <div class="progress-bar" id="freeShippingProgress" style="width: 75%;"></div>
+      </div>
+    </div>
+
+    <!-- Scrollable Items List -->
+    <div class="offcanvas-body p-3" id="cartDrawerItems">
+      <!-- Injected dynamically by main.js -->
+    </div>
+
+    <!-- Cart Footer & Checkout -->
+    <div class="cart-drawer-footer">
+      <!-- Promo Code Input -->
+      <div class="input-group input-group-sm mb-3">
+        <input type="text" class="form-control form-control-luxe" id="promoCodeInput" placeholder="Promo code (e.g. LUXE20)">
+        <button class="btn btn-outline-luxe" type="button" id="btnApplyPromo">Apply</button>
+      </div>
+
+      <!-- Pricing Summary -->
+      <div class="d-flex justify-content-between small text-muted mb-1">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">$345.00</span>
+      </div>
+      <div class="d-flex justify-content-between small text-muted mb-1">
+        <span>Estimated Delivery</span>
+        <span id="cartShipping">Complimentary</span>
+      </div>
+      <div class="d-flex justify-content-between small text-success mb-2" id="cartDiscountRow" style="display:none;">
+        <span>Promo Discount</span>
+        <span id="cartDiscount">-$0.00</span>
+      </div>
+      <div class="d-flex justify-content-between fw-bold fs-5 pt-2 border-top border-soft mb-3">
+        <span class="font-serif">Total</span>
+        <span id="cartTotal" class="text-gold">$345.00</span>
+      </div>
+
+      <button type="button" class="btn btn-primary w-100 py-3" id="btnProceedCheckout">
+        <span>Proceed to Checkout</span>
+        <i class="bi bi-lock-fill ms-1"></i>
+      </button>
+      <div class="text-center mt-2 small text-muted">
+        <i class="bi bi-shield-check text-gold me-1"></i> Secure 256-bit Encrypted Checkout
+      </div>
+    </div>
+  </div>
+
+  <!-- Wishlist Modal -->
+  <div class="modal fade modal-luxe" id="wishlistModal" tabindex="-1" aria-labelledby="wishlistModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom border-theme">
+          <h5 class="modal-title font-serif fs-4" id="wishlistModalLabel">Your Curated Wishlist</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4" id="wishlistItemsContainer">
+          <!-- Injected dynamically by main.js -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="modal fade modal-luxe" id="quickViewModal" tabindex="-1" aria-labelledby="quickViewTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom border-theme">
+          <span class="subheading mb-0" id="quickViewCategory">Handbags</span>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-6">
+              <div class="bg-surface-soft rounded overflow-hidden" style="height: 360px;">
+                <img src="assets/images/products/totes/tote-1.jpg" id="quickViewMainImg" alt="Quick view main bag" class="w-100 h-100 object-fit-cover">
+              </div>
+              <div class="quickview-thumb-gallery" id="quickViewGallery">
+                <!-- Gallery thumbs -->
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h3 class="font-serif fs-3 mb-2" id="quickViewTitle">Handbag Title</h3>
+              <div class="d-flex align-items-baseline gap-2 mb-3">
+                <span class="fs-4 fw-bold text-gold" id="quickViewPrice">$0.00</span>
+                <span class="text-muted text-decoration-line-through small" id="quickViewOldPrice">$0.00</span>
+              </div>
+              <p class="small text-secondary mb-3" id="quickViewDesc">Description goes here.</p>
+              
+              <div class="mb-3">
+                <span class="form-label-luxe d-block">Material:</span>
+                <span class="small text-muted" id="quickViewMaterial">Tuscan Leather</span>
+              </div>
+              <div class="mb-3">
+                <span class="form-label-luxe d-block">Dimensions:</span>
+                <span class="small text-muted" id="quickViewDimensions">38cm x 30cm</span>
+              </div>
+              <div class="mb-3">
+                <span class="form-label-luxe d-block">Available Colors:</span>
+                <div class="d-flex gap-2" id="quickViewSwatches">
+                  <!-- Swatches injected by JS -->
+                </div>
+              </div>
+
+              <div class="d-flex gap-2 align-items-center pt-3 border-top border-theme">
+                <div class="cart-stepper">
+                  <button type="button" onclick="this.nextElementSibling.stepDown()"><i class="bi bi-dash"></i></button>
+                  <input type="number" id="quickViewQty" value="1" min="1" max="10" readonly>
+                  <button type="button" onclick="this.previousElementSibling.stepUp()"><i class="bi bi-plus"></i></button>
+                </div>
+                <button type="button" class="btn btn-primary flex-grow-1" id="quickViewAddBtn">
+                  <span>Add to Bag</span>
+                  <i class="bi bi-bag-plus ms-1"></i>
+                </button>
+              </div>
+
+              <div class="mt-3 text-center">
+                <a href="#" id="quickViewDetailsLink" class="small text-decoration-underline text-gold">View Complete Product Specifications →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Search Modal -->
+  <div class="modal fade modal-luxe" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom border-theme">
+          <h5 class="modal-title font-serif fs-4" id="searchModalLabel">Search Our Atelier</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="input-group mb-3">
+            <span class="input-group-text bg-transparent border-theme"><i class="bi bi-search text-gold"></i></span>
+            <input type="search" class="form-control form-control-luxe" id="globalSearchInput" placeholder="Search by silhouette, color, leather type..." autocomplete="off">
+          </div>
+          <div id="globalSearchResults">
+            <p class="text-muted small text-center py-3">Type bag silhouette, category, or leather finish...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Demo Simulator Modal -->
+  <div class="modal fade modal-luxe" id="checkoutDemoModal" tabindex="-1" aria-labelledby="checkoutDemoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header border-bottom border-theme">
+          <h5 class="modal-title font-serif fs-4" id="checkoutDemoModalLabel">Maison Vélure Secure Checkout (Demo)</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="alert alert-info d-flex align-items-center gap-2 mb-4" role="alert">
+            <i class="bi bi-info-circle-fill fs-5"></i>
+            <div class="small">
+              <strong>Frontend Demonstration:</strong> No real payment or orders are processed. This demonstrates full validation and user journey.
+            </div>
+          </div>
+
+          <div id="checkoutDemoSuccess" style="display:none;" class="alert alert-success p-4 text-center">
+            <i class="bi bi-check-circle-fill display-4 text-success d-block mb-3"></i>
+            <h4 class="font-serif">Demonstration Order Simulated!</h4>
+            <p class="small text-muted mb-0">Your test order confirmation #MV-2026-9812 has been simulated. Your shopping bag has been cleared.</p>
+          </div>
+
+          <form id="checkoutDemoForm" class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label-luxe">First Name</label>
+              <input type="text" class="form-control form-control-luxe" required value="Clara">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label-luxe">Last Name</label>
+              <input type="text" class="form-control form-control-luxe" required value="Dupont">
+            </div>
+            <div class="col-12">
+              <label class="form-label-luxe">Delivery Address</label>
+              <input type="text" class="form-control form-control-luxe" required value="24 Avenue Montaigne">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label-luxe">City</label>
+              <input type="text" class="form-control form-control-luxe" required value="Paris">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label-luxe">Postal Code</label>
+              <input type="text" class="form-control form-control-luxe" required value="75008">
+            </div>
+            <div class="col-12">
+              <label class="form-label-luxe">Payment Method (Simulation)</label>
+              <div class="p-3 border rounded border-theme bg-surface-soft">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="payRadio" id="payRadio1" checked>
+                  <label class="form-check-label small fw-bold" for="payRadio1">
+                    <i class="bi bi-credit-card-2-front text-gold me-1"></i> Credit / Debit Card (Demo Simulator)
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 pt-3">
+              <button type="submit" class="btn btn-primary w-100 py-3">
+                <span>Simulate Order Placement</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS & Custom Logic -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/blog-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

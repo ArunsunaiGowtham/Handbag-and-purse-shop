@@ -1,0 +1,93 @@
+/* ==========================================================================
+   Maison Vélure Paris — RTL (Right-to-Left) Stylesheet
+   For Arabic, Hebrew, and RTL languages
+   ========================================================================== */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Nav & Dropdowns */
+[dir="rtl"] .dropdown-menu {
+  text-align: right;
+}
+
+[dir="rtl"] .dropdown-item-luxe:hover,
+[dir="rtl"] .dropdown-item-luxe.active {
+  padding-left: 1.4rem;
+  padding-right: 1.6rem;
+}
+
+[dir="rtl"] .top-bar-controls {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+/* Badges & Overlays */
+[dir="rtl"] .product-badges {
+  left: auto;
+  right: 14px;
+}
+
+[dir="rtl"] .hero-badge-float {
+  left: auto;
+  right: 24px;
+  border-left: none;
+  border-right: 3px solid var(--accent-gold);
+}
+
+/* Offcanvas */
+[dir="rtl"] .offcanvas-end {
+  right: auto !important;
+  left: 0 !important;
+  transform: translateX(-100%) !important;
+  border-left: none !important;
+  border-right: 1px solid var(--border-color) !important;
+}
+
+[dir="rtl"] .offcanvas-end.show {
+  transform: none !important;
+}
+
+/* Toasts */
+[dir="rtl"] .toast-container-luxe {
+  right: auto;
+  left: 24px;
+}
+
+[dir="rtl"] .toast-luxe {
+  border-left: none;
+  border-right: 3px solid var(--accent-gold);
+}
+
+/* Blog Cards */
+[dir="rtl"] .blog-read-link i {
+  transform: rotate(180deg);
+}
+
+[dir="rtl"] .blog-card:hover .blog-read-link {
+  gap: 0.6rem;
+}
+
+/* Footer links hover */
+[dir="rtl"] .footer-links a:hover {
+  padding-left: 0;
+  padding-right: 4px;
+}
+
+/* Form validation feedback */
+[dir="rtl"] .form-feedback {
+  text-align: right;
+}
+
+/* Star rating spacing */
+[dir="rtl"] .star-rating span {
+  margin-left: 0;
+  margin-right: 0.35rem;
+}
+
