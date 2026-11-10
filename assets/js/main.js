@@ -861,6 +861,14 @@
     document.querySelectorAll('.current-year').forEach(el => {
       el.textContent = new Date().getFullYear();
     });
+
+    // Ensure wishlist modal is always re-rendered when opened
+    const wishlistModalEl = document.getElementById('wishlistModal');
+    if (wishlistModalEl) {
+      wishlistModalEl.addEventListener('show.bs.modal', function () {
+        renderWishlistModal();
+      });
+    }
   });
 
   // Expose global helpers

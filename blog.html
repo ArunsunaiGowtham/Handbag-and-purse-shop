@@ -85,10 +85,10 @@
           RTL
         </button>
         <!-- Wishlist Trigger -->
-        <a href="shop.html" class="btn-icon" title="Wishlist — View Shop" aria-label="View Shop">
+        <button class="btn-icon" type="button" data-bs-toggle="modal" data-bs-target="#wishlistModal" title="Curated Wishlist" aria-label="Open Wishlist">
           <i class="bi bi-heart"></i>
           <span class="badge-count wishlist-badge-count" style="display:none;">0</span>
-        </a>
+        </button>
         <!-- Cart Trigger -->
         <button class="btn-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" title="Shopping Bag" aria-label="View Shopping Bag">
           <i class="bi bi-bag"></i>
@@ -179,13 +179,13 @@
         </div>
 
         <!-- Pagination / Load More -->
-        <div class="text-center mt-5 pt-3 border-top border-theme">
+        <div class="text-center mt-5 pt-3 border-top border-theme" id="blogPaginationContainer">
           <nav aria-label="Blog pagination">
-            <ul class="pagination justify-content-center mb-0">
-              <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">Previous</a></li>
-              <li class="page-item active"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            <ul class="pagination justify-content-center mb-0" id="blogPagination">
+              <li class="page-item disabled"><a class="page-link" href="#" data-page="0" tabindex="-1">Previous</a></li>
+              <li class="page-item active"><a class="page-link" href="#" data-page="1">1</a></li>
+              <li class="page-item"><a class="page-link" href="#" data-page="2">2</a></li>
+              <li class="page-item"><a class="page-link" href="#" data-page="2">Next</a></li>
             </ul>
           </nav>
         </div>
@@ -406,7 +406,7 @@
   <script src="assets/js/blog-data.js"></script>
   <script src="assets/js/main.js"></script>
 
-  <!-- Interactive Blog Filter & Alignment Controller -->
+  <!-- Interactive Blog Filter, Pagination & Search Controller -->
   <script>
     (function () {
       const grid = document.getElementById('blogCardsGrid');
@@ -415,11 +415,56 @@
       const searchInput = document.getElementById('blogSearchInput');
       const btnResetFilter = document.getElementById('btnResetBlogFilter');
       const btnResetEmpty = document.getElementById('btnResetBlogEmpty');
+      const paginationContainer = document.getElementById('blogPaginationContainer');
+      const paginationUl = document.getElementById('blogPagination');
 
+      const ITEMS_PER_PAGE = 9;
+      let currentPage = 1;
       let currentCategory = 'all';
       let currentSearch = '';
 
-      function renderArticles() {
+      function renderPagination(totalPages) {
+        if (!paginationUl || !paginationContainer) return;
+
+        if (totalPages <= 1) {
+          paginationContainer.style.display = 'none';
+          paginationUl.innerHTML = '';
+          return;
+        }
+
+        paginationContainer.style.display = 'block';
+
+        let html = '';
+        // Previous Button
+        const prevDisabled = currentPage <= 1;
+        html += `
+          <li class="page-item ${prevDisabled ? 'disabled' : ''}">
+            <a class="page-link" href="#" data-page="${currentPage - 1}" ${prevDisabled ? 'tabindex="-1" aria-disabled="true"' : ''} aria-label="Previous Page">Previous</a>
+          </li>
+        `;
+
+        // Numeric Page Buttons
+        for (let i = 1; i <= totalPages; i++) {
+          const isActive = i === currentPage;
+          html += `
+            <li class="page-item ${isActive ? 'active' : ''}">
+              <a class="page-link" href="#" data-page="${i}" aria-label="Page ${i}" ${isActive ? 'aria-current="page"' : ''}>${i}</a>
+            </li>
+          `;
+        }
+
+        // Next Button
+        const nextDisabled = currentPage >= totalPages;
+        html += `
+          <li class="page-item ${nextDisabled ? 'disabled' : ''}">
+            <a class="page-link" href="#" data-page="${currentPage + 1}" ${nextDisabled ? 'tabindex="-1" aria-disabled="true"' : ''} aria-label="Next Page">Next</a>
+          </li>
+        `;
+
+        paginationUl.innerHTML = html;
+      }
+
+      function renderArticles(scrollIntoView = false) {
         if (!window.BLOG_POSTS) return;
 
         let filtered = window.BLOG_POSTS.filter(post => {
@@ -439,13 +484,21 @@
           grid.innerHTML = '';
           noResults.style.display = 'block';
           countDisplay.textContent = '0';
+          if (paginationContainer) paginationContainer.style.display = 'none';
           return;
         }
 
         noResults.style.display = 'none';
         countDisplay.textContent = filtered.length;
 
-        grid.innerHTML = filtered.map(post => `
+        const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+        if (currentPage > totalPages) currentPage = Math.max(1, totalPages);
+        if (currentPage < 1) currentPage = 1;
+
+        const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+        const pageArticles = filtered.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+        grid.innerHTML = pageArticles.map(post => `
           <div class="col-md-6 col-lg-4">
             <article class="blog-card">
               <div class="blog-thumb-wrap">
@@ -481,6 +534,41 @@
             </article>
           </div>
         `).join('');
+
+        renderPagination(totalPages);
+
+        if (scrollIntoView && grid) {
+          grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+
+      // Pagination click delegation
+      if (paginationUl) {
+        paginationUl.addEventListener('click', (e) => {
+          const link = e.target.closest('a.page-link');
+          if (!link) return;
+          e.preventDefault();
+
+          const parentLi = link.closest('.page-item');
+          if (parentLi && (parentLi.classList.contains('disabled') || parentLi.classList.contains('active'))) {
+            return;
+          }
+
+          const targetPage = parseInt(link.getAttribute('data-page'), 10);
+          if (!isNaN(targetPage) && targetPage !== currentPage && targetPage >= 1) {
+            currentPage = targetPage;
+            // Update URL without page reload
+            const url = new URL(window.location.href);
+            if (currentPage > 1) {
+              url.searchParams.set('page', currentPage);
+            } else {
+              url.searchParams.delete('page');
+            }
+            window.history.replaceState({}, '', url);
+
+            renderArticles(true);
+          }
+        });
       }
 
       // Category Pill Click
@@ -489,6 +577,7 @@
           document.querySelectorAll('.blog-filter-pill').forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
           currentCategory = btn.getAttribute('data-category');
+          currentPage = 1;
           renderArticles();
         });
       });
@@ -496,23 +585,29 @@
       // Search Input
       searchInput.addEventListener('input', (e) => {
         currentSearch = e.target.value.trim();
+        currentPage = 1;
         renderArticles();
       });
 
       function resetFilter() {
         currentCategory = 'all';
         currentSearch = '';
+        currentPage = 1;
         searchInput.value = '';
         document.querySelectorAll('.blog-filter-pill').forEach(b => b.classList.remove('active'));
         const allBtn = document.querySelector('.blog-filter-pill[data-category="all"]');
         if (allBtn) allBtn.classList.add('active');
+        const url = new URL(window.location.href);
+        url.searchParams.delete('category');
+        url.searchParams.delete('page');
+        window.history.replaceState({}, '', url);
         renderArticles();
       }
 
       btnResetFilter.addEventListener('click', resetFilter);
       btnResetEmpty.addEventListener('click', resetFilter);
 
-      // Read initial category from URL parameter if provided
+      // Read initial parameters from URL
       const urlParams = new URLSearchParams(window.location.search);
       const initialCat = urlParams.get('category');
       if (initialCat) {
@@ -523,6 +618,11 @@
           matchingBtn.classList.add('active');
           currentCategory = matchingBtn.getAttribute('data-category');
         }
+      }
+
+      const initialPage = parseInt(urlParams.get('page'), 10);
+      if (!isNaN(initialPage) && initialPage > 0) {
+        currentPage = initialPage;
       }
 
       // Initial Render
