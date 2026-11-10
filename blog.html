@@ -182,10 +182,10 @@
         <div class="text-center mt-5 pt-3 border-top border-theme" id="blogPaginationContainer">
           <nav aria-label="Blog pagination">
             <ul class="pagination justify-content-center mb-0" id="blogPagination">
-              <li class="page-item disabled"><a class="page-link" href="#" data-page="0" tabindex="-1">Previous</a></li>
-              <li class="page-item active"><a class="page-link" href="#" data-page="1">1</a></li>
-              <li class="page-item"><a class="page-link" href="#" data-page="2">2</a></li>
-              <li class="page-item"><a class="page-link" href="#" data-page="2">Next</a></li>
+              <li class="page-item disabled"><a class="page-link" href="?page=1" data-page="1" tabindex="-1">Previous</a></li>
+              <li class="page-item active"><a class="page-link" href="?page=1" data-page="1">1</a></li>
+              <li class="page-item"><a class="page-link" href="?page=2" data-page="2">2</a></li>
+              <li class="page-item"><a class="page-link" href="?page=2" data-page="2">Next</a></li>
             </ul>
           </nav>
         </div>
@@ -435,11 +435,22 @@
         paginationContainer.style.display = 'block';
 
         let html = '';
+        function getPageHref(pageNum) {
+          const params = new URLSearchParams(window.location.search);
+          if (pageNum > 1) {
+            params.set('page', pageNum);
+          } else {
+            params.delete('page');
+          }
+          const qs = params.toString();
+          return qs ? `?${qs}` : 'blog.html';
+        }
+
         // Previous Button
         const prevDisabled = currentPage <= 1;
         html += `
           <li class="page-item ${prevDisabled ? 'disabled' : ''}">
-            <a class="page-link" href="#" data-page="${currentPage - 1}" ${prevDisabled ? 'tabindex="-1" aria-disabled="true"' : ''} aria-label="Previous Page">Previous</a>
+            <a class="page-link" href="${prevDisabled ? '#' : getPageHref(currentPage - 1)}" data-page="${currentPage - 1}" ${prevDisabled ? 'tabindex="-1" aria-disabled="true"' : ''} aria-label="Previous Page">Previous</a>
           </li>
         `;
 
@@ -448,7 +459,7 @@
           const isActive = i === currentPage;
           html += `
             <li class="page-item ${isActive ? 'active' : ''}">
-              <a class="page-link" href="#" data-page="${i}" aria-label="Page ${i}" ${isActive ? 'aria-current="page"' : ''}>${i}</a>
+              <a class="page-link" href="${getPageHref(i)}" data-page="${i}" aria-label="Page ${i}" ${isActive ? 'aria-current="page"' : ''}>${i}</a>
             </li>
           `;
         }
@@ -457,7 +468,7 @@
         const nextDisabled = currentPage >= totalPages;
         html += `
           <li class="page-item ${nextDisabled ? 'disabled' : ''}">
-            <a class="page-link" href="#" data-page="${currentPage + 1}" ${nextDisabled ? 'tabindex="-1" aria-disabled="true"' : ''} aria-label="Next Page">Next</a>
+            <a class="page-link" href="${nextDisabled ? '#' : getPageHref(currentPage + 1)}" data-page="${currentPage + 1}" ${nextDisabled ? 'tabindex="-1" aria-disabled="true"' : ''} aria-label="Next Page">Next</a>
           </li>
         `;
 
@@ -557,19 +568,34 @@
           const targetPage = parseInt(link.getAttribute('data-page'), 10);
           if (!isNaN(targetPage) && targetPage !== currentPage && targetPage >= 1) {
             currentPage = targetPage;
-            // Update URL without page reload
+            // Update URL and browser history
             const url = new URL(window.location.href);
             if (currentPage > 1) {
               url.searchParams.set('page', currentPage);
             } else {
               url.searchParams.delete('page');
             }
-            window.history.replaceState({}, '', url);
+            window.history.pushState({ page: currentPage, category: currentCategory }, '', url);
 
             renderArticles(true);
           }
         });
       }
+
+      // Handle browser back / forward navigation
+      window.addEventListener('popstate', (e) => {
+        const params = new URLSearchParams(window.location.search);
+        const p = parseInt(params.get('page'), 10) || 1;
+        const cat = params.get('category') || 'all';
+        if (p !== currentPage || cat !== currentCategory) {
+          currentPage = p;
+          currentCategory = cat;
+          document.querySelectorAll('.blog-filter-pill').forEach(b => {
+            b.classList.toggle('active', b.getAttribute('data-category').toLowerCase() === cat.toLowerCase());
+          });
+          renderArticles(false);
+        }
+      });
 
       // Category Pill Click
       document.querySelectorAll('.blog-filter-pill').forEach(btn => {
