@@ -89,9 +89,9 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  overflow-x: hidden !important;
-  max-width: 100vw !important;
-  width: 100% !important;
+  overflow-x: clip;
+  max-width: 100%;
+  width: 100%;
 }
 
 body {
@@ -101,9 +101,9 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden !important;
-  max-width: 100vw !important;
-  width: 100% !important;
+  overflow-x: clip;
+  max-width: 100%;
+  width: 100%;
   position: relative;
   transition: background-color var(--transition-base), color var(--transition-base);
 }
@@ -381,8 +381,10 @@ img {
 }
 
 .navbar-luxe.sticky-nav {
-  position: sticky;
-  top: 0;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1040 !important;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   background-color: rgba(253, 251, 248, 0.94);
@@ -1352,6 +1354,27 @@ img {
   color: var(--text-muted);
   margin-left: 0.35rem;
   font-size: 0.75rem;
+}
+
+/* Review & Testimonial Avatars */
+.review-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent-gold);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+  display: block;
+}
+
+[data-bs-theme="dark"] .review-avatar {
+  border-color: rgba(212, 175, 55, 0.7);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.review-author-info {
+  line-height: 1.3;
 }
 
 /* --------------------------------------------------------------------------
