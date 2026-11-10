@@ -972,6 +972,22 @@ img {
   margin-right: auto;
 }
 
+.page-header-banner .btn-outline-luxe,
+.page-header-banner .btn-outline-light {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.75) !important;
+  background-color: rgba(255, 255, 255, 0.12) !important;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.page-header-banner .btn-outline-luxe:hover,
+.page-header-banner .btn-outline-light:hover {
+  color: #1a1716 !important;
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
 /* Page-specific background images & focal alignment */
 .page-header-shop {
   background-image: url('../images/products/extras/bag-extra-1.jpg');
